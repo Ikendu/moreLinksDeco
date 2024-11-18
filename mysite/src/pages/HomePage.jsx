@@ -8,17 +8,27 @@ export default function HomePage() {
     <div>
       <header>
         <div className="logoSection">
-          <img src={logoImage} alt="More Links Icon" className="logoImage" />
-          <h3>
-            <img src={morelinksImage} alt="" className="moreImage" />
-          </h3>
+          <img
+            src={morelinksImage}
+            alt="More Links Icon"
+            className="moreImage"
+          />
         </div>
-        <ul>
+        <div>
+          {/* <img src={morelinksImage} alt="" className="moreImage" /> */}
+        </div>
+        <ul className="headerLinks">
           <li>Home</li>
           <li>About Us</li>
           <li>Contact us</li>
         </ul>
       </header>
+      <section>
+        <div className="pageCover">
+          <h1>More Links Event Decorations</h1>
+          <p>Make your day Memorable</p>
+        </div>
+      </section>
     </div>
   );
 }
