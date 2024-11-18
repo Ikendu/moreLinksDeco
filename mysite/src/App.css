@@ -40,13 +40,13 @@ header {
   border-radius: 10px; */
 }
 .headerLinks li {
-  border-left: solid 1px #423c3c;
-  background-color: bisque;
+  border-left: solid 1px #f7f5f5;
+  background-color: #e37cee;
   padding: 20px;
   margin: 0;
 }
 .headerLinks li:hover {
-  background-color: rgb(8, 76, 76);
+  background-color: #560f5e;
   border-left: 1px solid rgb(242, 240, 238);
   color: aliceblue;
   cursor: pointer;
@@ -63,19 +63,26 @@ header {
   font-size: 3em;
 }
 .overlay {
-  background-color: #164545ca;
+  background-color: #4c1652ba;
   position: absolute;
   top: 60px;
   width: 100%;
   z-index: 10;
   height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: aliceblue;
 }
 .divider {
   position: relative;
   bottom: 0;
+}
+.landingContent {
+  position: relative;
+  top: 100px;
+  margin: auto;
+  color: rgb(169, 176, 182);
+  width: 40%;
+  background-color: #560f5e;
+  padding: 40px;
+  box-shadow: 0px 10px 10px #9b9393;
+  border-radius: 20px;
+  text-align: center;
 }
