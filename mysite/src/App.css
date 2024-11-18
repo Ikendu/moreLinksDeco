@@ -58,12 +58,24 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   /* background-attachment: fixed; */
+}
+.pageCover h1 {
+  font-size: 3em;
+}
+.overlay {
+  background-color: #164545ca;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  z-index: 10;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: aliceblue;
 }
-
-.pageCover h1 {
-  font-size: 3em;
+.divider {
+  position: relative;
+  bottom: 0;
 }

@@ -25,8 +25,10 @@ export default function HomePage() {
       </header>
       <section>
         <div className="pageCover">
-          <h1>More Links Event Decorations</h1>
-          <p>Make your day Memorable</p>
+          <div className="overlay">
+            <h1>More Links Event Decorations</h1>
+            <p>Make your day Memorable</p>
+          </div>
         </div>
       </section>
     </div>
