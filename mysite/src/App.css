@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.logoImage {
+  border-radius: 50%;
+  height: 70px;
+}
+.moreImage {
+  height: 70px;
+  border-radius: 50px;
+}
+.logoSection {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  /* background-color: black; */
+}
