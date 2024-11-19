@@ -26,7 +26,7 @@ export default function HomePage() {
           <div className="overlay">
             <div className="landingContent">
               <h1>Transform Your Event into a Magical Experience</h1>
-              <p>Because Every Occasion Deserves to Be Unforgettable.</p>
+              <p>Every Occasion Deserves to Be Unforgettable.</p>
               <h3>
                 Welcome to More-Links Event Decoration: Where Elegance Meets
                 Creativity
