@@ -2,6 +2,8 @@ import React from "react";
 import Getter from "../assets/images/getter";
 import logoImage from "../assets/images/logoImage.png";
 import morelinksImage from "../assets/images/morelinks.png";
+import divider from "../assets/images/divider1.svg";
+import ChooseUs from "../components/ChooseUs";
 
 export default function HomePage() {
   return (
@@ -30,19 +32,22 @@ export default function HomePage() {
               <h1>Transform Your Event into a Magical Experience</h1>
               <p>Because Every Occasion Deserves to Be Unforgettable.</p>
               <h3>
-                Welcome to [Your Business Name]: Where Elegance Meets Creativity
+                Welcome to More-Links Event Decoration: Where Elegance Meets
+                Creativity
               </h3>
-              <p>
+              <p className="moreParagraph">
                 Your event isn’t just a gathering—it’s a story waiting to be
-                told. At [Your Business Name], we specialize in creating
-                captivating spaces that embody your vision and leave a lasting
-                impression. From intimate celebrations to grand occasions, we
-                bring your dreams to life with stunning event décor tailored to
-                your style and theme.
+                told. From intimate celebrations to grand occasions, we bring
+                your dreams to life with stunning event décor tailored to your
+                style and theme.
               </p>
             </div>
           </div>
         </div>
+        <img src={divider} alt="" className="divider" />
+      </section>
+      <section>
+        <ChooseUs />
       </section>
     </div>
   );
