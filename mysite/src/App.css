@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #e2dce2;
 }
 header {
   position: fixed;
@@ -10,34 +11,44 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   background-color: #41073f;
-  box-shadow: 0px 7px 10px #fcfbfb;
+  box-shadow: 0px 7px 10px #050000;
+  transition: 1s;
 }
 
 .moreImage {
-  height: 60px;
-  /* border-radius: 10px; */
   cursor: pointer;
   margin-left: 30px;
+  padding: 0 20px;
+  background-color: #1a1818;
+  border-right: 1px solid whitesmoke;
+  border-left: 1px solid whitesmoke;
+  transition: 1s;
 }
-.logoSection {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
+
 .headerLinks {
   display: flex;
   list-style: none;
   align-items: center;
   margin: 0;
   font-size: 1em;
+  transition: 1s;
 }
 .headerLinks li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
   border-left: solid 1px #f7f5f5;
-  /* background-color: #560f5e; */
   color: rgb(197, 206, 214);
-  padding: 20px;
   margin: 0;
+  transition: 1s;
 }
+.increaseLink {
+  padding: 20px;
+}
+.reduceLink {
+  padding: 10px 20px;
+}
+
 .headerLinks li:hover {
   background-color: #e37cee;
   border-left: 1px solid rgb(242, 240, 238);
@@ -45,11 +56,11 @@ header {
   cursor: pointer;
 }
 .pageCover {
-  background-image: url(./assets/images/rst.webp);
-  height: 90vh;
   position: relative;
+  background-image: url(./assets/images/rst.webp);
+  height: 95vh;
   z-index: -1;
-  top: 60px;
+  top: 40px;
   background-color: #0f3d3d;
   background-size: cover;
   background-attachment: fixed;
@@ -59,12 +70,13 @@ header {
   background-color: #41073fba;
   width: 100%;
   z-index: 10;
-  height: 90vh;
+  height: 95vh;
 }
-.divider {
-  position: relative;
-  bottom: 0;
-}
+/* .divider {
+  position: absolute;
+  z-index: 100;
+  transform: rotate(180deg);
+} */
 .landingContent {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", sans-serif;
   position: relative;
@@ -74,8 +86,8 @@ header {
   width: 40%;
   background-color: #41073f;
   padding: 20px 40px;
-  box-shadow: 0px 10px 10px #e9e6e6;
-  border-radius: 20px;
+  box-shadow: 0px 10px 10px #171717, 0px -3px 5px #171717;
+  border-radius: 0 0 20px 20px;
   text-align: center;
 }
 .landingContent h1 {
@@ -85,17 +97,21 @@ header {
   word-spacing: 10px;
   line-height: 1.8em;
 }
-.landingContent button {
+.heroButton {
+  position: relative;
   padding: 17px;
   background-color: #d4b716;
   font-size: 20px;
   border: none;
   border-radius: 5px;
   margin: 20px;
-  z-index: 20;
-  box-shadow: 0 9px #999;
+  /* z-index: -20; */
+  box-shadow: 0 9px #5794a5;
 }
-.landingContent button:active {
+.heroButton:hover {
+  background-color: #3e8e41;
+}
+.heroButton:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
@@ -112,4 +128,53 @@ header {
   /* position: relative; */
   margin: 200px 0;
   z-index: 10;
+}
+.chooseUs h1 {
+  font-size: 40px;
+  margin: 100px;
+}
+.fullPage {
+  margin: 0 10%;
+}
+.serviceIage {
+  width: 40%;
+}
+.imageDetails {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.imageDetails2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin: 40px 0;
+}
+.pageContent {
+  width: 40%;
+  font-size: 25px;
+  line-height: 35px;
+  word-spacing: 5px;
+}
+.service {
+  background-image: url(./assets/images/image7.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.serviceHeader {
+  font-size: 3em;
+  color: #211f1f;
+  text-align: center;
+}
+.servicePara {
+  max-width: 800px;
+  font-size: 1.5em;
 }

@@ -1,24 +1,60 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Getter from "../assets/images/getter";
 import logoImage from "../assets/images/logoImage.png";
 import morelinksImage from "../assets/images/morelinks.png";
 import divider from "../assets/images/divider1.svg";
 import ChooseUs from "../components/ChooseUs";
+import homeIcon from "../assets/icons/home.png";
+import aboutIcon from "../assets/icons/about.png";
+import OurService from "../components/OurService";
 
 export default function HomePage() {
+  const [smallHeader, setSmallHeader] = useState(false);
+
+  useEffect(() => {
+    const handleHeaderSize = () => {
+      if (window.scrollY > 50) {
+        setSmallHeader(true);
+      } else {
+        setSmallHeader(false);
+      }
+    };
+    window.addEventListener("scroll", handleHeaderSize);
+
+    return () => {
+      window.removeEventListener("scroll", handleHeaderSize);
+    };
+  }, []);
+
   return (
     <div>
       <header>
         <div className="logoSection">
-          <img src={logoImage} alt="More Links Icon" className="moreImage" />
-        </div>
-        <div>
-          {/* <img src={morelinksImage} alt="" className="moreImage" /> */}
+          <img
+            src={logoImage}
+            alt="More Links Icon"
+            className="moreImage"
+            height={smallHeader ? 40 : 60}
+          />
         </div>
         <ul className="headerLinks">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Contact us</li>
+          <li className={smallHeader ? "reduceLink" : "increaseLink"}>
+            <i class="fa-solid fa-house"></i>
+            Home
+          </li>
+          <li className={smallHeader ? "reduceLink" : "increaseLink"}>
+            <i class="fa-solid fa-users"></i>
+            About Us
+          </li>
+          <li className={smallHeader ? "reduceLink" : "increaseLink"}>
+            <i class="fa-solid fa-phone"></i>Contact us
+          </li>
+          <li className={smallHeader ? "reduceLink" : "increaseLink"}>
+            <i class="fa-solid fa-phone"></i>Blog Post
+          </li>
+          <li className={smallHeader ? "reduceLink" : "increaseLink"}>
+            <i class="fa-solid fa-phone"></i>Register with us
+          </li>
         </ul>
       </header>
       <section>
@@ -37,14 +73,21 @@ export default function HomePage() {
                 your dreams to life with stunning event décor tailored to your
                 style and theme.
               </p>
-              <button>Uncover More</button>
+              {/* <input
+                type="button"
+                className="heroButton"
+                value={"Uncover More"}
+              /> */}
             </div>
           </div>
+          <img src={divider} alt="" className="divider" />
         </div>
-        <img src={divider} alt="" className="divider" />
       </section>
       <section>
         <ChooseUs />
+      </section>
+      <section>
+        <OurService />
       </section>
     </div>
   );
