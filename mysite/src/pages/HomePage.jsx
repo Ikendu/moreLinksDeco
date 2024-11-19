@@ -10,11 +10,7 @@ export default function HomePage() {
     <div>
       <header>
         <div className="logoSection">
-          <img
-            src={morelinksImage}
-            alt="More Links Icon"
-            className="moreImage"
-          />
+          <img src={logoImage} alt="More Links Icon" className="moreImage" />
         </div>
         <div>
           {/* <img src={morelinksImage} alt="" className="moreImage" /> */}
@@ -41,6 +37,7 @@ export default function HomePage() {
                 your dreams to life with stunning event décor tailored to your
                 style and theme.
               </p>
+              <button>Uncover More</button>
             </div>
           </div>
         </div>
