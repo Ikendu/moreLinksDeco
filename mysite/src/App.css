@@ -161,9 +161,23 @@ header {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: 600px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.service {
+.overlay2 {
+  background-color: #f4f3f435;
+  width: 100%;
+  /* z-index: 10; */
+  height: 100%;
+}
+/* .service {
+} */
+.serviceCover {
+  margin: 20px;
+  border-radius: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,10 +185,15 @@ header {
 }
 .serviceHeader {
   font-size: 3em;
-  color: #211f1f;
-  text-align: center;
+  margin-block: 0.5em;
 }
 .servicePara {
   max-width: 800px;
   font-size: 1.5em;
+  line-height: 30px;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+  background-color: #f9f7f7df;
+  padding: 20px 40px;
+  border-radius: 20px;
 }
