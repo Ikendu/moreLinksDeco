@@ -11,7 +11,7 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   background-color: #41073f;
-  box-shadow: 0px 7px 10px #050000;
+  box-shadow: 0px 7px 10px #f9f6f6;
   transition: 1s;
 }
 
@@ -82,11 +82,11 @@ header {
   position: relative;
   top: 90px;
   margin: auto;
-  color: rgb(169, 176, 182);
+  color: rgb(229, 232, 234);
   width: 40%;
   background-color: #41073f;
   padding: 20px 40px;
-  box-shadow: 0px 10px 10px #171717, 0px -3px 5px #171717;
+  box-shadow: 0px 10px 10px #c1c0c0, 0px -3px 5px #f9f6f6;
   border-radius: 0 0 20px 20px;
   text-align: center;
 }
