@@ -7,6 +7,7 @@ import ChooseUs from "../components/ChooseUs";
 import homeIcon from "../assets/icons/home.png";
 import aboutIcon from "../assets/icons/about.png";
 import OurService from "../components/OurService";
+import Footer from "../components/footer/Footer";
 
 export default function HomePage() {
   const [smallHeader, setSmallHeader] = useState(false);
@@ -88,6 +89,9 @@ export default function HomePage() {
       </section>
       <section>
         <OurService />
+      </section>
+      <section>
+        <Footer />
       </section>
     </div>
   );

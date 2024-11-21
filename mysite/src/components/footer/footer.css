@@ -1,0 +1,12 @@
+.footer {
+  background-color: rgb(68, 2, 59);
+  padding: 4em;
+  color: #d2d7dc;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.imageFooter {
+  width: 200px;
+  border-radius: 10px;
+}

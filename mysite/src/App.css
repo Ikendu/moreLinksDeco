@@ -138,17 +138,19 @@ header {
 }
 .serviceIage {
   width: 40%;
+  border-radius: 10px;
+  box-shadow: 4px 4px 7px;
 }
 .imageDetails {
   display: flex;
   justify-content: space-between;
-  margin: 40px 0;
+  margin: 40px;
 }
 .imageDetails2 {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
-  margin: 40px 0;
+  margin: 6em 0;
 }
 .pageContent {
   width: 40%;
@@ -196,4 +198,6 @@ header {
   background-color: #f9f7f7df;
   padding: 20px 40px;
   border-radius: 20px;
+
+  box-shadow: 4px 4px 7px;
 }
