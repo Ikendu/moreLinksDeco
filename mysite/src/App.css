@@ -37,7 +37,7 @@ header {
   display: flex;
   gap: 10px;
   align-items: center;
-  border-left: solid 1px #f7f5f5;
+  /* border-left: solid 1px #f7f5f5; */
   color: rgb(197, 206, 214);
   margin: 0;
   transition: 1s;
@@ -51,7 +51,6 @@ header {
 
 .headerLinks li:hover {
   background-color: #e37cee;
-  border-left: 1px solid rgb(242, 240, 238);
   color: #2f2e2e;
   cursor: pointer;
 }
@@ -78,11 +77,12 @@ header {
   transform: rotate(180deg);
 } */
 .landingContent {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", sans-serif;
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", sans-serif; */
+  font-family: "Quicksand";
   position: relative;
   top: 90px;
   margin: auto;
-  color: rgb(229, 232, 234);
+  color: rgb(195, 197, 199);
   width: 40%;
   background-color: #41073f;
   padding: 20px 40px;
@@ -91,9 +91,8 @@ header {
   text-align: center;
 }
 .landingContent h1 {
-  font-family: Cinzel, "Franklin Gothic Medium", "Arial Narrow", Arial,
-    sans-serif;
-  font-size: 2em;
+  font-family: "Montserrat Alternates", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.5em;
   word-spacing: 10px;
   line-height: 1.8em;
 }

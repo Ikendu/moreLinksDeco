@@ -64,10 +64,8 @@ export default function HomePage() {
             <div className="landingContent">
               <h1>Transform Your Event into a Magical Experience</h1>
               <p>Every Occasion Deserves to Be Unforgettable.</p>
-              <h3>
-                Welcome to More-Links Event Decoration: Where Elegance Meets
-                Creativity
-              </h3>
+              <h3>Welcome to More-Links Event Decoration</h3>
+              <h3>Where Elegance Meets Creativity</h3>
               <p className="moreParagraph">
                 Your event isn’t just a gathering—it’s a story waiting to be
                 told. From intimate celebrations to grand occasions, we bring
