@@ -51,10 +51,10 @@ export default function HomePage() {
             <i class="fa-solid fa-phone"></i>Contact us
           </li>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <i class="fa-solid fa-phone"></i>Blog Post
+            <i class="fa-solid fa-blog"></i>Blog Post
           </li>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <i class="fa-solid fa-phone"></i>Register with us
+            <i class="fa-solid fa-users-between-lines"></i>Our Community
           </li>
         </ul>
       </header>
