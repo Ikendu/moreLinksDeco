@@ -1,0 +1,40 @@
+.slideHeading {
+  text-align: center;
+  font-size: 2em;
+}
+.sliderIage {
+  width: 90%;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.sliderOverlay {
+  position: absolute;
+  background-color: #9f04b431;
+  border-radius: 20px;
+  top: 0;
+  width: 90%;
+  height: 100%;
+  z-index: 20;
+}
+.sliderOverlay:hover {
+  background-color: #9f04b400;
+}
+.slider-container {
+  /* z-index: -10; */
+  /* overflow: hidden; */
+  width: 95%;
+  margin: auto;
+  margin-bottom: 100px;
+  box-shadow: 0px 10px 10px #310337, 0px -5px 10px #5f056b;
+}
+.slideHolder {
+  position: relative;
+}
+.slick-prev,
+.slick-next {
+  color: black;
+  background-color: rgb(107, 4, 84);
+  border-radius: 50%;
+  /* width: 30px;
+  height: 30px; */
+}
