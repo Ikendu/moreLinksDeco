@@ -27,7 +27,27 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <h2>Services and Solutions</h2>
+          <h2>✨&nbsp;Services&nbsp;and&nbsp;Solutions</h2>
+          <ul className="serviceList">
+            <li>
+              <a href="">🎈 Event Styling</a>
+            </li>
+            <li>
+              <a href="">💐 Floral Arrangements</a>
+            </li>
+            <li>
+              <a href="">🎀 Custom Decor </a>
+            </li>
+            <li>
+              <a href="">🎶 Lighting & Ambience</a>
+            </li>
+            <li>
+              <a href="">📸 Instagram-Worthy Setups</a>
+            </li>
+            <li>
+              <a href="">🌺 Explore Our Gallary 🌺</a>
+            </li>
+          </ul>
         </div>
         <div>
           <h2>Quick Links</h2>
@@ -84,6 +104,10 @@ export default function Footer() {
               </a>
             </li>
           </ul>
+          <p className="socialPara">
+            We bring the years, global experience, and stamina to guide our
+            clients through new and often disruptive realities.
+          </p>
         </div>
       </div>
       <div className="lowerFooter">

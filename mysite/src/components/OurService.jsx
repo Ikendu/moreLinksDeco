@@ -5,7 +5,7 @@ export default function OurService() {
     <div className="service">
       <div className="overlay2">
         <div className="serviceCover">
-          <h2 className="serviceHeader">Our Services</h2>
+          <h2 className="serviceHeader">What we do</h2>
           <div className="servicePara">
             <p>
               ✨ Weddings & Engagements: Romantic, breathtaking designs that

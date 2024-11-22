@@ -1,14 +1,15 @@
 .footer {
   background-color: rgb(68, 2, 59);
-  padding: 4em;
+  padding: 2em;
   color: #d2d7dc;
   display: flex;
-  gap: 20px;
+  gap: 40px;
   justify-content: space-between;
 }
 .imageFooter {
   width: 100px;
   border-radius: 10px;
+  /* margin-top: 20px; */
 }
 .contact {
   display: flex;
@@ -23,7 +24,7 @@
 }
 .footerLinks {
   padding: 0;
-  border: 0;
+  margin: 3px;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -39,21 +40,37 @@
   font-weight: 700;
 }
 .socialLinks {
+  padding: 0;
+  margin: 3px;
   list-style: none;
   display: flex;
   gap: 20px;
 }
-.socialLinks li {
-  border: 1px solid white;
-  padding: 10px;
-  border-radius: 50%;
-  width: 20px;
-  text-align: center;
-}
 .socialLinks li a {
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
   color: #d2d7dc;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  width: 25px;
 }
-.socialLinks li:hover {
+.socialLinks li a:hover {
   color: #454646;
   background-color: #d2d7dc;
+}
+.serviceList {
+  padding: 3px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.serviceList a {
+  text-decoration: none;
+  color: #a2a5a7;
+}
+.socialPara {
+  max-width: 250px;
 }
