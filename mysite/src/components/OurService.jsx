@@ -16,10 +16,6 @@ export default function OurService() {
               awards nights, and conferences.
             </p>
             <p>
-              🌺 Themed Events: From boho-chic to classic glam, we bring your
-              vision to life.
-            </p>
-            <p>
               🎈 Private Parties: Birthdays, anniversaries, and everything in
               between—celebrate in style.
             </p>
