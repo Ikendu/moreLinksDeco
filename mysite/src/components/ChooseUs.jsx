@@ -13,9 +13,16 @@ export default function ChooseUs() {
     <div className="fullPage">
       <div className="chooseUs">
         <h1>Decorate your dreams and live them today</h1>
+        <div className="moreParagraph">
+          <p>
+            Your event isn’t just a gathering—it’s a story waiting to be told.
+            From intimate celebrations to grand occasions, we bring your dreams
+            to life with stunning event décor tailored to your style and theme.
+          </p>
+        </div>
         <div className="imageDetails">
           <div className="pageContent">
-            <h3>🎨 Custom Creations, Perfectly Your likeness</h3>
+            <h3>Custom Creations, Perfectly Your likeness</h3>
             <p>
               No two events are alike, and neither are our designs. Whether you
               dream of a chic minimalist wedding or a vibrant corporate gala,
@@ -25,6 +32,7 @@ export default function ChooseUs() {
           </div>
           <img src={image1} alt="" className="serviceIage" />
         </div>
+
         <div className="imageDetails2">
           <div className="pageContent">
             <h3>Every Detail gets the required attention</h3>

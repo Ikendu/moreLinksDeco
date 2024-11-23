@@ -3,7 +3,12 @@
   padding: 2em;
   color: #d2d7dc;
   display: flex;
-  gap: 40px;
+  gap: 20px;
+  justify-content: space-between;
+}
+.footerContents {
+  display: flex;
+  gap: 70px;
   justify-content: space-between;
 }
 .imageFooter {
@@ -11,10 +16,16 @@
   border-radius: 10px;
   /* margin-top: 20px; */
 }
+
 .contact {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.centerControl {
+  display: flex;
+  gap: 70px;
+  justify-content: space-around;
 }
 .lowerFooter {
   color: aliceblue;
@@ -54,7 +65,7 @@
   padding: 10px;
   font-size: 20px;
   text-align: center;
-  width: 25px;
+  width: 50px;
 }
 .socialLinks li a:hover {
   color: #454646;
@@ -73,4 +84,30 @@
 }
 .socialPara {
   max-width: 250px;
+  line-height: 30px;
+}
+@media (max-width: 1300px) {
+  .footer {
+    flex-direction: column;
+  }
+  .imageContainer {
+    display: flex;
+  }
+}
+
+@media (max-width: 1100px) {
+  .centerControl {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .lowerFooter {
+    font-size: 10px;
+  }
+}
+@media (max-width: 600px) {
+ .footerContents{
+  flex-direction: column;
+  align-items: center;
+ }
 }

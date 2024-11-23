@@ -14,6 +14,7 @@ import Slider from "../components/SliderComponent";
 
 export default function HomePage() {
   const [smallHeader, setSmallHeader] = useState(false);
+  const [showNav, setShowNav] = useState(false);
 
   useEffect(() => {
     const handleHeaderSize = () => {
@@ -41,7 +42,7 @@ export default function HomePage() {
             height={smallHeader ? 40 : 60}
           />
         </div>
-        <ul className="headerLinks">
+        <ul className={!showNav ? "headerLinks" : "showNav"}>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
             <i class="fa-solid fa-house"></i>
             Home
@@ -57,9 +58,13 @@ export default function HomePage() {
             <i class="fa-solid fa-blog"></i>Blog Post
           </li>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <i class="fa-solid fa-users-between-lines"></i>Our Community
+            <i class="fa-solid fa-toolbox"></i>Our Service
           </li>
         </ul>
+        <i
+          class="fa-solid fa-bars nav-bar"
+          onClick={() => setShowNav(!showNav)}
+        ></i>
       </header>
       <section>
         <div className="pageCover">
@@ -69,12 +74,7 @@ export default function HomePage() {
               <p>Every Occasion Deserves to Be Unforgettable.</p>
               <h3>Welcome to More-Links Event Decoration</h3>
               <h3>Where Elegance Meets Creativity</h3>
-              <p className="moreParagraph">
-                Your event isn’t just a gathering—it’s a story waiting to be
-                told. From intimate celebrations to grand occasions, we bring
-                your dreams to life with stunning event décor tailored to your
-                style and theme.
-              </p>
+
               {/* <input
                 type="button"
                 className="heroButton"

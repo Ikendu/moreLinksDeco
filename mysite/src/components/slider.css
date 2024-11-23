@@ -3,25 +3,25 @@
   font-size: 2em;
 }
 .sliderIage {
-  width: 90%;
+  width: 80%;
   border-radius: 20px;
   margin-top: 10px;
 }
 .sliderOverlay {
+  cursor: pointer;
   position: absolute;
-  background-color: #9f04b431;
+  background-color: #f2e1f431;
   border-radius: 20px;
   top: 0;
-  width: 90%;
+  width: 80%;
   height: 100%;
-  z-index: 20;
 }
 .sliderOverlay:hover {
   background-color: #9f04b400;
 }
 .slider-container {
-  /* z-index: -10; */
   /* overflow: hidden; */
+  position: relative;
   width: 95%;
   margin: auto;
   margin-bottom: 100px;
@@ -35,6 +35,4 @@
   color: black;
   background-color: rgb(107, 4, 84);
   border-radius: 50%;
-  /* width: 30px;
-  height: 30px; */
 }
