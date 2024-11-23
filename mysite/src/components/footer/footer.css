@@ -23,7 +23,7 @@
 .contact {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 4px;
 }
 .centerControl {
   display: flex;
@@ -112,5 +112,9 @@
   .footerContents {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
+  }
+  .centerControl{
+    gap: 20px;
   }
 }

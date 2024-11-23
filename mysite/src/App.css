@@ -264,14 +264,15 @@ header {
     display: inline-block;
     margin: 0 10px;
     font-size: 2em;
-    cursor: pointerheaderLinks;
+    cursor: pointer;
   }
   .headerLinks {
     flex-direction: column;
     position: absolute;
+    border-radius: 10px;
     right: 0;
     background-color: #41073f;
-    padding: 0 50px;
+    padding: 20px 50px;
     display: none;
   }
   .showNav {
@@ -279,9 +280,10 @@ header {
     position: absolute;
     right: 0;
     background-color: #41073f;
-    padding: 0 50px;
+    padding: 10px 50px;
+    border-radius: 10px;
     display: inline-block;
-    top: 40px;
+    top: 30px;
     list-style: none;
     color: #e1e4e4;
   }
@@ -291,6 +293,9 @@ header {
   }
 }
 @media (max-width: 800px) {
+  .reduceLink {
+    padding: 20px;
+  }
   .pageContent {
     font-size: 1em;
     width: 90%;

@@ -25,7 +25,7 @@ export default function Footer() {
               </div>
               <div className="contact">
                 <i class="fa-solid fa-location-dot"></i>
-                <p>30 Adelabor Street Uwani Enugu, Nigeria</p>
+                <p>30 Adelabor Street Uwani Enugu</p>
               </div>
             </div>
             <div>
