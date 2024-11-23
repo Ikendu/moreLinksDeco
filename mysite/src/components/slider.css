@@ -39,3 +39,8 @@
   background-color: rgb(107, 4, 84);
   border-radius: 50%;
 }
+@media (max-width: 800px) {
+  .slideContainer {
+    display: none;
+  }
+}

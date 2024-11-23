@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 body {
   width: 100%;
@@ -7,7 +8,6 @@ body {
   margin: 0;
   background-color: #e2dce2;
   font-family: Quicksand, Georgia, Times, "Times New Roman", serif;
-  overflow-x: hidden;
 }
 header {
   position: fixed;
@@ -20,6 +20,7 @@ header {
   background-color: #41073f;
   box-shadow: 0px 7px 10px #f9f6f6;
   transition: 1s;
+  overflow-x: hidden;
 }
 
 .moreImage {
@@ -260,8 +261,8 @@ header {
     font-size: 1.2em;
   }
   .nav-bar {
-    display: block;
-    margin: 0 30px;
+    display: inline-block;
+    margin: 0 10px;
     font-size: 2em;
     cursor: pointerheaderLinks;
   }
