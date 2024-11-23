@@ -22,7 +22,7 @@ function CenterMode() {
     speed: 500,
   };
   return (
-    <div>
+    <div className="slideContainer">
       <h2 className="slideHeading">Discover the Art of Event Elegance</h2>
       <div className="slider-container">
         <Slider {...settings}>
