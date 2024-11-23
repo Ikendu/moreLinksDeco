@@ -70,6 +70,7 @@ header {
   background-color: #0f3d3d;
   background-size: cover;
   background-attachment: fixed;
+  margin-bottom: 200px;
 }
 
 .overlay {
@@ -356,11 +357,11 @@ header {
 }
 @media (max-width: 500px) {
   .pageCover {
-    height: 70vh;
+    height: 90vh;
   }
   .overlay {
     z-index: 10;
-    height: 70vh;
+    height: 90vh;
   }
   .pageContent {
     font-size: 1em;
