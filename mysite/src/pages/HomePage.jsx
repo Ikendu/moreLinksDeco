@@ -8,7 +8,8 @@ import homeIcon from "../assets/icons/home.png";
 import aboutIcon from "../assets/icons/about.png";
 import OurService from "../components/OurService";
 import Footer from "../components/footer/Footer";
-import Slider from "../components/SliderComponent";
+import Slider from "../components/sliders/SliderComponent";
+import MobileSlider from "../components/sliders/MobileSlider";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -90,6 +91,7 @@ export default function HomePage() {
       </section>
       <section>
         <Slider />
+        <MobileSlider />
       </section>
       <section>
         <OurService />
