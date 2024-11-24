@@ -28,38 +28,50 @@ function CenterMode() {
         <Slider {...settings}>
           <div>
             <div className="slideHolder">
-              <img src={first} alt="" className="sliderIage" />
-              <div className="sliderOverlay">.</div>
+              <a href={first}>
+                <img src={first} alt="" className="sliderIage" />
+                <div className="sliderOverlay">.</div>
+              </a>
             </div>
           </div>
           <div>
             <div className="slideHolder">
-              <img src={second} alt="" className="sliderIage" />
-              <div className="sliderOverlay">.</div>
+              <a href={second}>
+                <img src={second} alt="" className="sliderIage" />
+                <div className="sliderOverlay">.</div>
+              </a>
             </div>
           </div>
           <div>
             <div className="slideHolder">
-              <img src={third} alt="" className="sliderIage" />
-              <div className="sliderOverlay">.</div>
+              <a href={first}>
+                <img src={third} alt="" className="sliderIage" />
+                <div className="sliderOverlay">.</div>
+              </a>
             </div>
           </div>
           <div>
             <div className="slideHolder">
-              <img src={fourth} alt="" className="sliderIage" />
-              <div className="sliderOverlay"></div>
+              <a href={first}>
+                <img src={fourth} alt="" className="sliderIage" />
+                <div className="sliderOverlay"></div>
+              </a>
             </div>
           </div>
           <div>
             <div className="slideHolder">
-              <img src={fifth} alt="" className="sliderIage" />
-              <div className="sliderOverlay">.</div>
+              <a href={first}>
+                <img src={fifth} alt="" className="sliderIage" />
+                <div className="sliderOverlay">.</div>
+              </a>
             </div>
           </div>
           <div>
             <div className="slideHolder">
-              <img src={sixth} alt="" className="sliderIage" />
-              <div className="sliderOverlay">.</div>
+              <a href={first}>
+                <img src={sixth} alt="" className="sliderIage" />
+                <div className="sliderOverlay">.</div>
+              </a>
             </div>
           </div>
         </Slider>
