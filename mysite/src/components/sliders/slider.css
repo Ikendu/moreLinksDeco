@@ -49,9 +49,10 @@
   .mobileSlideContainer {
     display: block;
     width: 95%;
+    /* height: 700px; */
   }
   .sliderIage {
-    width: 100%;
+    width: 97%;
   }
   .sliderOverlay {
     width: 100%;
