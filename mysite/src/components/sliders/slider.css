@@ -48,5 +48,9 @@
   }
   .mobileSlideContainer {
     display: block;
+    width: 95%;
+  }
+  .sliderIage {
+    width: 100%;
   }
 }
