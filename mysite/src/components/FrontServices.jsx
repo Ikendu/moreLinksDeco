@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function OurService() {
+export default function FrontServices() {
   return (
     <div className="service">
       <div className="overlay2">

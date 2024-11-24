@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+/* .footerContainer {
+  position: absolute;
+
+  width: 100%;
+} */
 .footer {
   background-color: rgb(68, 2, 59);
   padding: 2em;
@@ -114,7 +119,7 @@
     align-items: center;
     gap: 20px;
   }
-  .centerControl{
+  .centerControl {
     gap: 20px;
   }
 }

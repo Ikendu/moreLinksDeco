@@ -6,7 +6,7 @@ import Getter from "../../assets/images/getter";
 
 export default function Footer() {
   return (
-    <div>
+    <div className="footerContainer">
       <div className="footer">
         <div className="imageContainer">
           <img src={logo} alt="" className="imageFooter" />

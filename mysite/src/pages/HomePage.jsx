@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Getter from "../assets/images/getter";
-import logoImage from "../assets/images/logoImage.png";
 import morelinksImage from "../assets/images/morelinks.png";
 import divider from "../assets/images/divider1.svg";
 import ChooseUs from "../components/ChooseUs";
 import homeIcon from "../assets/icons/home.png";
 import aboutIcon from "../assets/icons/about.png";
-import OurService from "../components/OurService";
+
+import FrontServices from "../components/FrontServices";
 import Footer from "../components/footer/Footer";
 import Slider from "../components/sliders/SliderComponent";
 import MobileSlider from "../components/sliders/MobileSlider";
+import Header from "../components/header/Header";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -31,42 +32,8 @@ export default function HomePage() {
       window.removeEventListener("scroll", handleHeaderSize);
     };
   }, []);
-
   return (
     <div>
-      <header>
-        <div className="logoSection">
-          <img
-            src={logoImage}
-            alt="More Links Icon"
-            className="moreImage"
-            height={smallHeader ? 40 : 60}
-          />
-        </div>
-        <ul className={!showNav ? "headerLinks" : "showNav"}>
-          <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <i class="fa-solid fa-house"></i>
-            Home
-          </li>
-          <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <i class="fa-solid fa-users"></i>
-            About Us
-          </li>
-          <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <i class="fa-solid fa-phone"></i>Contact us
-          </li>
-          <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <i class="fa-solid fa-blog"></i>Blog Post
-          </li>
-          <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <i class="fa-solid fa-toolbox"></i>Our Service
-          </li>
-        </ul>
-        <i
-          class="fa-solid fa-bars nav-bar"
-          onClick={() => setShowNav(!showNav)}
-        ></i>
-      </header>
       <section>
         <div className="pageCover">
           <div className="overlay">
@@ -94,10 +61,7 @@ export default function HomePage() {
         <MobileSlider />
       </section>
       <section>
-        <OurService />
-      </section>
-      <section>
-        <Footer />
+        <FrontServices />
       </section>
     </div>
   );
