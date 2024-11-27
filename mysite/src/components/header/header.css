@@ -9,6 +9,7 @@ header {
   background-color: #41073f;
   box-shadow: 0px 7px 10px #f9f6f6;
   transition: 1s;
+  align-items: center;
   /* overflow-x: hidden; */
 }
 
@@ -21,6 +22,9 @@ header {
   border-left: 1px solid whitesmoke;
   transition: 1s;
 }
+.moreImage:hover {
+  background-color: #094755;
+}
 
 .headerLinks {
   display: flex;
@@ -30,7 +34,8 @@ header {
   font-size: 1em;
   transition: 1s;
 }
-.headerLinks li {
+/* .headerLinks li, */
+.links {
   text-decoration: none;
   display: flex;
   gap: 10px;
@@ -55,4 +60,48 @@ header {
   background-color: #e37cee;
   color: #2f2e2e;
   cursor: pointer;
+}
+.nav-bar {
+  color: #dadcdd;
+  display: block;
+  display: none;
+}
+
+@media (max-width: 910px) {
+  .nav-bar {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  .headerLinks {
+    flex-direction: column;
+    position: absolute;
+    border-radius: 10px;
+    right: 0;
+    background-color: #41073f;
+    padding: 20px 50px;
+    display: none;
+  }
+  .showNav {
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    background-color: #41073f;
+    padding: 10px 50px;
+    border-radius: 10px;
+    display: inline-block;
+    top: 30px;
+    list-style: none;
+    color: #e1e4e4;
+  }
+  .showNav li {
+    display: flex;
+    gap: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .reduceLink {
+    padding: 20px;
+  }
 }

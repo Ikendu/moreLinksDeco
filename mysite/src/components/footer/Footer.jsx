@@ -3,6 +3,7 @@ import "./footer.css";
 
 import logo from "../../assets/images/logoImage.png";
 import Getter from "../../assets/images/getter";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -32,22 +33,22 @@ export default function Footer() {
               <h2>✨&nbsp;Services&nbsp;&&nbsp;Solutions</h2>
               <ul className="serviceList">
                 <li>
-                  <a href="">🎈 Event Styling</a>
+                  <Link to="/gallery">🎈 Event Styling</Link>
                 </li>
                 <li>
                   <a href="">💐 Floral Arrangements</a>
                 </li>
                 <li>
-                  <a href="">🎀 Custom Decor </a>
+                  <Link to="/gallery">🎀 Custom Decor </Link>
                 </li>
                 <li>
-                  <a href="">🚨 Lighting & Ambience</a>
+                  <Link to="/gallery">🚨 Lighting & Ambience</Link>
                 </li>
                 <li>
-                  <a href="">📸 Instagram-Worthy Setups</a>
+                  <Link to="/gallery">📸 Instagram-Worthy Setups</Link>
                 </li>
                 <li>
-                  <a href="">🌺 Explore Our Gallary 🌺</a>
+                  <Link to="/gallery">🌺 Explore Our Gallary 🌺</Link>
                 </li>
               </ul>
             </div>
@@ -57,22 +58,22 @@ export default function Footer() {
               <h2>Quick Links</h2>
               <ul className="footerLinks">
                 <li>
-                  <a href="">About Us</a>
+                  <Link to="/about">About Us</Link>
                 </li>
                 <li>
-                  <a href="">Our Solutions</a>
+                  <Link to="/services">Our Solutions</Link>
                 </li>
                 <li>
-                  <a href="">Our Gallary.</a>
+                  <Link to="/gallery">Our Gallary.</Link>
                 </li>
                 <li>
-                  <a href="">Clients Testimonies</a>
+                  <Link to="/testimony">Clients Testimonies</Link>
                 </li>
                 <li>
-                  <a href="">Event planning trends.</a>
+                  <Link to="/blogpost">Event planning trends.</Link>
                 </li>
                 <li>
-                  <a href="">Reach out today.</a>
+                  <Link to="/contact">Reach out today.</Link>
                 </li>
               </ul>
             </div>

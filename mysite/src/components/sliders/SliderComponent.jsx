@@ -8,9 +8,13 @@ import "./slider.css";
 import first from "../../assets/images/first.jpeg";
 import second from "../../assets/images/second.jpeg";
 import third from "../../assets/images/third.jpeg";
+import image9 from "../../assets/images/image9.jpg";
 import fourth from "../../assets/images/fourth.jpg";
 import fifth from "../../assets/images/fifth.jpg";
-import sixth from "../../assets/images/sixth.jpg";
+import image14 from "../../assets/images/image14.jpg";
+import image10 from "../../assets/images/image10.jpg";
+import image12 from "../../assets/images/image12.jpg";
+import image13 from "../../assets/images/image13.jpg";
 
 function CenterMode() {
   const settings = {
@@ -34,7 +38,7 @@ function CenterMode() {
           </div>
           <div>
             <div className="slideHolder">
-              <img src={second} alt="" className="sliderIage" />
+              <img src={image14} alt="" className="sliderIage" />
               <div className="sliderOverlay">.</div>
             </div>
           </div>
@@ -46,19 +50,19 @@ function CenterMode() {
           </div>
           <div>
             <div className="slideHolder">
-              <img src={fourth} alt="" className="sliderIage" />
+              <img src={image13} alt="" className="sliderIage" />
               <div className="sliderOverlay"></div>
             </div>
           </div>
           <div>
             <div className="slideHolder">
-              <img src={fifth} alt="" className="sliderIage" />
+              <img src={image10} alt="" className="sliderIage" />
               <div className="sliderOverlay">.</div>
             </div>
           </div>
           <div>
             <div className="slideHolder">
-              <img src={sixth} alt="" className="sliderIage" />
+              <img src={image12} alt="" className="sliderIage" />
               <div className="sliderOverlay">.</div>
             </div>
           </div>

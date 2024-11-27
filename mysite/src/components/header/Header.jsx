@@ -24,14 +24,17 @@ export default function Header() {
   return (
     <div>
       <header>
-        <div className="logoSection">
-          <img
-            src={logoImage}
-            alt="More Links Icon"
-            className="moreImage"
-            height={smallHeader ? 40 : 60}
-          />
-        </div>
+        <Link to={"/"}>
+          <div className="logoSection">
+            <img
+              src={logoImage}
+              alt="More Links Icon"
+              className="moreImage"
+              height={smallHeader ? 40 : 60}
+            />
+          </div>
+        </Link>
+
         <ul className={!showNav ? "headerLinks" : "showNav"}>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
             <Link to={"/"} class="links">
@@ -41,20 +44,26 @@ export default function Header() {
           </li>
 
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link to={"/services"}>
+            <Link to={"/services"} class="links">
               <i class="fa-solid fa-toolbox"></i>Our Services
             </Link>
           </li>
 
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <i class="fa-solid fa-users"></i>
-            About Us
+            <Link to={"/about"} class="links">
+              <i class="fa-solid fa-users"></i>
+              About Us
+            </Link>
           </li>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <i class="fa-solid fa-phone"></i>Contact us
+            <Link to={"/contact"} class="links">
+              <i class="fa-solid fa-phone"></i>Contact us
+            </Link>
           </li>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <i class="fa-solid fa-blog"></i>Blog Post
+            <Link to={"/blogpost"} class="links">
+              <i class="fa-solid fa-blog"></i>Blog Post
+            </Link>
           </li>
         </ul>
         <i

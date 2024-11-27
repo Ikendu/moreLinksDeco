@@ -4,7 +4,7 @@ import image2 from "../assets/images/image2.jpeg";
 import image3 from "../assets/images/image3.jpeg";
 import image4 from "../assets/images/image4.jpeg";
 import image5 from "../assets/images/image5.jpeg";
-import image6 from "../assets/images/image6.webp";
+import image9 from "../assets/images/image9.jpg";
 import logoImage from "../assets/images/logoImage.png";
 import Getter from "../assets/images/getter";
 
@@ -88,7 +88,7 @@ export default function ChooseUs() {
               tailored to your style and theme.
             </p>
           </div>
-          <img src={image6} alt="" className="serviceIage" />
+          <img src={image9} alt="" className="serviceIage" />
         </div>
       </div>
     </div>

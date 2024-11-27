@@ -121,11 +121,6 @@ body {
   line-height: 35px;
   word-spacing: 5px;
 }
-.nav-bar {
-  color: #dadcdd;
-  display: block;
-  display: none;
-}
 
 .service {
   background-image: url(./assets/images/image7.webp);
@@ -199,9 +194,7 @@ body {
   }
 }
 @media (max-width: 910px) {
-  header {
-    align-items: center;
-  }
+ 
   .serviceIage {
     width: 50%;
     max-height: 400px;
@@ -214,31 +207,6 @@ body {
     margin: 0 10px;
     font-size: 2em;
     cursor: pointer;
-  }
-  .headerLinks {
-    flex-direction: column;
-    position: absolute;
-    border-radius: 10px;
-    right: 0;
-    background-color: #41073f;
-    padding: 20px 50px;
-    display: none;
-  }
-  .showNav {
-    flex-direction: column;
-    position: absolute;
-    right: 0;
-    background-color: #41073f;
-    padding: 10px 50px;
-    border-radius: 10px;
-    display: inline-block;
-    top: 30px;
-    list-style: none;
-    color: #e1e4e4;
-  }
-  .showNav li {
-    display: flex;
-    gap: 20px;
   }
 }
 @media (max-width: 800px) {
