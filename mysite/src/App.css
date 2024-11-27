@@ -202,12 +202,7 @@ body {
   .pageContent {
     font-size: 1.2em;
   }
-  .nav-bar {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 2em;
-    cursor: pointer;
-  }
+
 }
 @media (max-width: 800px) {
   .reduceLink {
