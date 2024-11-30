@@ -3,7 +3,6 @@
 }
 body {
   position: relative;
-  width: 100%;
   padding: 0;
   margin: 0;
   background-color: #e2dce2;
@@ -194,7 +193,6 @@ body {
   }
 }
 @media (max-width: 910px) {
- 
   .serviceIage {
     width: 50%;
     max-height: 400px;
@@ -202,7 +200,6 @@ body {
   .pageContent {
     font-size: 1.2em;
   }
-
 }
 @media (max-width: 800px) {
   .reduceLink {

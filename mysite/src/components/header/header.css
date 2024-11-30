@@ -63,13 +63,12 @@ header {
 }
 .nav-bar {
   color: #dadcdd;
-  display: block;
   display: none;
 }
 
 @media (max-width: 910px) {
   .nav-bar {
-    display: inline-block;
+    display: block;
     margin: 0 10px;
     font-size: 2em;
     cursor: pointer;

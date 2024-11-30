@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
 }
+
 /* .footerContainer {
   position: absolute;
-
+  bottom: 0;
   width: 100%;
 } */
 .footer {
