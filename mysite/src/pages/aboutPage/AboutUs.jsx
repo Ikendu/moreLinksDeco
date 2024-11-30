@@ -20,29 +20,38 @@ export default function AboutUs() {
       </div>
       <div className="moreAbout">
         <div className="aboutStory">
-          <h2>Our Story</h2>
-          <p>
-            Our journey began with a shared passion for creativity and a
-            dedication to excellence. What started as a small endeavor fueled by
-            big dreams has blossomed into a trusted name in event decoration,
-            serving clients with professionalism, innovation, and heart. Every
-            project we take on is an opportunity to tell a story—your
-            story—through design, color, and atmosphere.
-          </p>
+          <section>
+            <h2>Our Story</h2>
+            <p>
+              Our journey began with a shared passion for creativity and a
+              dedication to excellence. What started as a small endeavor fueled
+              by big dreams has blossomed into a trusted name in event
+              decoration, serving clients with professionalism, innovation, and
+              heart. Every project we take on is an opportunity to tell a
+              story—your story—through design, color, and atmosphere.
+            </p>
+          </section>
         </div>
-        <div>
+        {/* <hr /> */}
+        <div className="aboutApart">
           <h2>What Sets Us Apart</h2>
-          <div>
-            <p>Expertise Across Events:</p>
-            With a portfolio spanning weddings, corporate functions, birthdays,
-            anniversaries, and themed parties, we bring versatile skills to
-            every project.
-            <p>Attention to Detail:</p>
-            Our meticulous approach ensures every element, from table settings
-            to floral arrangements, aligns seamlessly with your vision.
-            <p>Client-Centric Philosophy:</p>
-            We believe in collaboration. Your ideas fuel our creativity, and
-            together, we craft unforgettable experiences.
+          <div className="apartDetails">
+            <div>
+              <p>Expertise Across Events:</p>
+              With a portfolio spanning weddings, corporate functions,
+              birthdays, anniversaries, and themed parties, we bring versatile
+              skills to every project.
+            </div>
+            <div>
+              <p>Attention to Detail:</p>
+              Our meticulous approach ensures every element, from table settings
+              to floral arrangements, aligns seamlessly with your vision.
+            </div>
+            <div>
+              <p>Client-Centric Philosophy:</p>
+              We believe in collaboration. Your ideas fuel our creativity, and
+              together, we craft unforgettable experiences.
+            </div>
           </div>
         </div>
       </div>
@@ -74,18 +83,20 @@ export default function AboutUs() {
               </section>
             </div>
           </div>
-          <div>
-            <h3>Let’s Make Magic Together</h3>
-            <p>
-              Your event deserves to be unforgettable, and we’re here to make
-              that happen. Whether you’re dreaming of a grand celebration or an
-              intimate gathering, [Your Business Name] is your partner in
-              bringing your vision to life.
-            </p>
-            <p>
-              Let’s create something extraordinary—together. Contact us today to
-              start planning your dream event!
-            </p>
+          <div className="chooseMagic">
+            <section>
+              <h3>Let’s Make Magic Together</h3>
+              <p>
+                Your event deserves to be unforgettable, and we’re here to make
+                that happen. Whether you’re dreaming of a grand celebration or
+                an intimate gathering, More-Links Event Deco is your partner in
+                bringing your vision to life.
+              </p>
+              <p>
+                Let’s create something extraordinary—together. Contact us today
+                to start planning your dream event!
+              </p>
+            </section>
           </div>
         </div>
       </div>
