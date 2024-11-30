@@ -50,11 +50,28 @@ export default function AboutUs() {
         <div className="aboutChooseMore">
           <div>
             <h2>Why Choose Us?</h2>
-            <div>
-              Proven Track Record: Over 6 years of delivering exceptional event
-              décor. Tailored Solutions: Every detail is customized to match
-              your preferences and theme. Passion for Perfection: We treat every
-              event as if it’s our own, ensuring flawless execution.
+            <div className="moreChoose">
+              <section>
+                <i class="fa-solid fa-street-view chooseUsIcon"></i>
+                <h4>Proven Track Record:</h4>
+                <p>Over 6 years of delivering exceptional event décor</p> .
+              </section>
+              <section>
+                <i class="fa-solid fa-list-check chooseUsIcon"></i>
+                <h4>Tailored Solutions:</h4>
+                <p>
+                  Every detail is customized to match your preferences and
+                  theme.
+                </p>
+              </section>
+              <section>
+                <i class="fa-solid fa-wand-magic-sparkles chooseUsIcon"></i>
+                <h4>Passion for Perfection:</h4>
+                <p>
+                  We treat every event as if it’s our own, ensuring flawless
+                  execution.
+                </p>
+              </section>
             </div>
           </div>
           <div>

@@ -1,5 +1,5 @@
 .aboutContainer {
-  z-index: -1;
+  /* z-index: 1; */
   padding: 40px 0px;
   position: relative;
 }
@@ -10,6 +10,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
+}
+h2 {
+  text-align: center;
 }
 .aboutOverlay {
   position: absolute;
@@ -38,14 +41,16 @@
   font-size: 20px;
   text-shadow: 2px 0px #131212;
 }
-.aboutStory{
-    margin: 50px 0;
+.aboutStory {
+  margin: 50px 0;
 }
 .moreAbout {
   margin: 50px 200px;
 }
 .aboutChoose {
   background-image: url("../../assets/images/chooseImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 100px;
 }
@@ -54,6 +59,30 @@
   color: rgb(210, 213, 215);
   padding: 20px 30px;
   border-radius: 10px;
+}
+.moreChoose {
+  display: flex;
+  text-align: center;
+}
+.moreChoose h4{
+    font-size: 24px;
+}
+.moreChoose p{
+    font-size: 18px;
+}
+.chooseUsIcon {
+  padding: 30px;
+  background-color: #42022d;
+  font-size: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 20;
+}
+.chooseUsIcon:hover {
+  padding: 30px;
+  background-color: #cdcccd;
+  border: 2px solid #42022d;
+  color: #42022d;
 }
 @media (max-width: 1000px) {
   .aboutOverlay {
