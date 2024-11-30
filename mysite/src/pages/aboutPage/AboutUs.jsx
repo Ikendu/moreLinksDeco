@@ -38,19 +38,26 @@ export default function AboutUs() {
           <div className="apartDetails">
             <div>
               <p>Expertise Across Events:</p>
-              With a portfolio spanning weddings, corporate functions,
-              birthdays, anniversaries, and themed parties, we bring versatile
-              skills to every project.
+              <span>
+                With a portfolio spanning weddings, corporate functions,
+                birthdays, anniversaries, and themed parties, we bring versatile
+                skills to every project.
+              </span>
             </div>
             <div>
               <p>Attention to Detail:</p>
-              Our meticulous approach ensures every element, from table settings
-              to floral arrangements, aligns seamlessly with your vision.
+              <span>
+                Our meticulous approach ensures every element, from table
+                settings to floral arrangements, aligns seamlessly with your
+                vision.
+              </span>
             </div>
             <div>
               <p>Client-Centric Philosophy:</p>
-              We believe in collaboration. Your ideas fuel our creativity, and
-              together, we craft unforgettable experiences.
+              <span>
+                We believe in collaboration. Your ideas fuel our creativity, and
+                together, we craft unforgettable experiences.
+              </span>
             </div>
           </div>
         </div>

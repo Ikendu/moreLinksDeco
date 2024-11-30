@@ -15,6 +15,9 @@
   text-align: center;
   font-size: 40px;
 }
+.aboutContainer h2:hover {
+  text-decoration: underline;
+}
 .aboutOverlay {
   position: absolute;
   padding: 2px;
@@ -42,6 +45,7 @@
   font-size: 20px;
   text-shadow: 2px 0px #131212;
 }
+
 .moreAbout {
   display: flex;
   flex-direction: column;
@@ -76,10 +80,21 @@
   text-decoration: overline;
   font-weight: 800;
 }
+.aboutApart p:hover {
+  text-decoration: underline;
+  font-weight: 800;
+}
 .apartDetails {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  font-size: 1.4em;
+}
+.apartDetails span {
+  font-size: 0.8em;
+  line-height: 30px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
 }
 .aboutChoose {
   background-image: url("../../assets/images/chooseImage.jpg");
@@ -88,6 +103,9 @@
   background-attachment: fixed;
   padding: 100px;
   text-align: center;
+  line-height: 32px;
+  word-spacing: 3px;
+  /* letter-spacing: 1px; */
 }
 .aboutChooseMore {
   background-color: #0a0a0ab8;
@@ -101,6 +119,12 @@
   justify-content: space-evenly;
   margin: 50px auto;
 }
+
+.moreChoose section:hover {
+  background-color: #fcc3e9;
+  color: #252525;
+  border-radius: 10px;
+}
 .moreChoose h4 {
   font-size: 24px;
 }
@@ -109,7 +133,7 @@
 }
 .chooseUsIcon {
   padding: 30px;
-  background-color: #42022d;
+  background-color: #7d0555;
   font-size: 60px;
   border-radius: 50%;
   border: 2px solid white;
@@ -118,7 +142,7 @@
 .chooseUsIcon:hover {
   padding: 30px;
   background-color: #cdcccd;
-  border: 2px solid #42022d;
+  border: 2px solid #7d0555;
   color: #42022d;
 }
 .chooseMagic {
@@ -128,7 +152,7 @@
   font-size: 20px;
 }
 .chooseMagic section {
-  max-width: 600px;
+  max-width: 800px;
 }
 @media (max-width: 1000px) {
   .aboutOverlay {
