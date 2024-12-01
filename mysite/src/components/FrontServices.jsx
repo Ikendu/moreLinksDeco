@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function FrontServices() {
   return (
@@ -21,6 +22,16 @@ export default function FrontServices() {
             </p>
           </div>
         </div>
+        <Link
+          className="whatsappChat"
+          to={
+            "https://wa.me/2348061632276?text=Hello%20there!%20I%20want%20to%20discuss%20with%20you."
+          }
+          target="_blank"
+        >
+          <i class="fa-brands fa-whatsapp "></i>
+          Tell us how you want it
+        </Link>
       </div>
     </div>
   );

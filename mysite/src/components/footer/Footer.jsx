@@ -95,6 +95,14 @@ export default function Footer() {
                     <i class="fa-brands fa-twitter"></i>
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://wa.me/2348061632276?text=Hello%20there!%20I%20want%20to%20discuss%20with%20you."
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </li>
               </ul>
               <p className="socialPara">
                 We bring the years, global experience, and stamina to guide our
