@@ -11,6 +11,7 @@ import Footer from "../components/footer/Footer";
 import Slider from "../components/sliders/SliderComponent";
 import MobileSlider from "../components/sliders/MobileSlider";
 import Header from "../components/header/Header";
+import { Link } from "react-router-dom";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -42,18 +43,27 @@ export default function HomePage() {
               <p>Every Occasion Deserves to Be Unforgettable.</p>
               <h3>Welcome to More-Links Event Decoration</h3>
               <h3>Where Elegance Meets Creativity</h3>
-
-              {/* <input
-                type="button"
-                className="heroButton"
-                value={"Uncover More"}
-              /> */}
+              <a href="#body">
+                <input
+                  type="button"
+                  className="heroButton"
+                  value={"Uncover More"}
+                />
+              </a>
             </div>
           </div>
           <img src={divider} alt="" className="divider" />
-        </div>
+        </div>{" "}
       </section>
-      <section>
+      <Link
+        to={
+          "https://wa.me/2348061632276?text=Hello%20there!%20I%20want%20to%20discuss%20with%20you."
+        }
+        target="_blank"
+      >
+        <i class="fa-brands fa-whatsapp whatsapp"></i>
+      </Link>
+      <section id="body">
         <ChooseUs />
       </section>
       <section>

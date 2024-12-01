@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+  /* transition: 2s; */
+}
 body {
   position: relative;
   padding: 0;
@@ -8,18 +12,19 @@ body {
   background-color: #e2dce2;
   font-family: Quicksand, Georgia, Times, "Times New Roman", serif;
   overflow-x: hidden;
+  /* transition: 2s; */
 }
 
 .pageCover {
   position: relative;
   background-image: url(./assets/images/rst.webp);
   height: 95vh;
-  z-index: -1;
   top: 40px;
   background-color: #0f3d3d;
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 200px;
+  /* transition: 2s; */
 }
 
 .overlay {
@@ -28,6 +33,18 @@ body {
   z-index: 10;
   height: 95vh;
 }
+.whatsapp {
+  position: fixed;
+  bottom: 25px;
+  color: rgb(207, 211, 209);
+  font-size: 30px;
+  cursor: pointer;
+  padding: 15px;
+  background-color: #420b2d;
+  border-radius: 50%;
+  /* z-index: 200; */
+}
+
 .landingContent {
   font-family: "Quicksand";
   position: relative;
@@ -40,6 +57,7 @@ body {
   box-shadow: 0px 10px 10px #c1c0c0, 0px -3px 5px #f9f6f6;
   border-radius: 0 0 20px 20px;
   text-align: center;
+  /* transition: 2s; */
 }
 
 .landingContent h1 {
@@ -49,18 +67,18 @@ body {
   line-height: 1.8em;
 }
 .heroButton {
-  position: relative;
   padding: 17px;
-  background-color: #d4b716;
-  font-size: 20px;
+  background-color: #6e2858;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
-  margin: 20px;
-  /* z-index: -20; */
-  box-shadow: 0 9px #5794a5;
+  margin: 15px;
+  cursor: pointer;
+  box-shadow: 0 9px #cc73b1;
+  color: #b8b9b8;
 }
 .heroButton:hover {
-  background-color: #3e8e41;
+  background-color: #236425;
 }
 .heroButton:active {
   background-color: #3e8e41;

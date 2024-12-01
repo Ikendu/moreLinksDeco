@@ -34,6 +34,7 @@ export default function Header() {
             />
           </div>
         </Link>
+        
 
         <ul className={!showNav ? "headerLinks" : "showNav"}>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
