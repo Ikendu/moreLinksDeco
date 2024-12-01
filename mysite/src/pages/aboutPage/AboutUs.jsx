@@ -69,12 +69,12 @@ export default function AboutUs() {
             <div className="moreChoose">
               <section>
                 <i class="fa-solid fa-street-view chooseUsIcon"></i>
-                <h4>Proven Track Record:</h4>
+                <h4>Proven Track Record</h4>
                 <p>Over 6 years of delivering exceptional event décor</p> .
               </section>
               <section>
                 <i class="fa-solid fa-list-check chooseUsIcon"></i>
-                <h4>Tailored Solutions:</h4>
+                <h4>Tailored Solutions</h4>
                 <p>
                   Every detail is customized to match your preferences and
                   theme.
@@ -82,7 +82,7 @@ export default function AboutUs() {
               </section>
               <section>
                 <i class="fa-solid fa-wand-magic-sparkles chooseUsIcon"></i>
-                <h4>Passion for Perfection:</h4>
+                <h4>Passion for Perfection</h4>
                 <p>
                   We treat every event as if it’s our own, ensuring flawless
                   execution.
