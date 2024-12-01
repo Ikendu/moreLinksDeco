@@ -127,6 +127,7 @@
 }
 .moreChoose h4 {
   font-size: 24px;
+  color: #9b9999;
 }
 .moreChoose p {
   font-size: 18px;
@@ -155,9 +156,14 @@
   max-width: 800px;
 }
 @media (max-width: 1200px) {
+  .aboutChoose {
+    padding: 50px;
+    line-height: 25px;
+  }
   .moreChoose h4 {
     font-size: 20px;
     text-wrap: nowrap;
+    margin: 20px 0 -5px;
   }
   .moreChoose p {
     font-size: 16px;
@@ -183,6 +189,9 @@
   .aboutMain p {
     width: max(68%, 380px);
   }
+  .moreChoose {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 850px) {
   .aboutStory section {
@@ -190,6 +199,9 @@
   }
 }
 @media (max-width: 580px) {
+  .aboutContainer h2 {
+    font-size: 30px;
+  }
   .aboutMain {
     padding: 30px 20px;
   }
@@ -200,5 +212,61 @@
     background-color: #1312128f;
     padding: 20px;
     border-radius: 10px;
+    max-height: 300px;
+    overflow: auto;
+  }
+  ::-webkit-scrollbar{
+    background: #bdbbbb;
+    border-radius: 3px;
+    width: 3px;
+  }
+
+  .aboutStory {
+    max-width: 400px;
+    font-size: 14px;
+  }
+
+  .aboutApart {
+    padding: 25px 20px;
+    margin: 20px 5px;
+  }
+  .aboutApart p {
+    font-size: 20px;
+  }
+  .apartDetails {
+    gap: 20px;
+    font-size: 1.2em;
+  }
+  .apartDetails span {
+    line-height: 25px;
+  }
+  .chooseMagic p {
+    line-height: 30px;
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 480px) {
+  .aboutStory {
+    max-width: 300px;
+    font-size: 0.8em;
+  }
+  .aboutChooseMore {
+    padding: 20px;
+  }
+  .aboutChoose {
+    padding: 20px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 350px) {
+  .aboutChooseMore {
+    padding: 10px;
+  }
+  .chooseMagic h3 {
+    line-height: 30px;
+  }
+
+  .chooseMagic p {
+    line-height: 25px;
   }
 }
