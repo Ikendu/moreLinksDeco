@@ -7,10 +7,23 @@
 .accordion-body {
   padding: 0;
 }
+.accordion-item{
+  margin: 10px;
+  background-color: none;
+}
+.accordion-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .accordion-button {
   color: #871173;
-  font-size: 1em;
+  font-size: 0.7em;
   font-weight: 700;
+  border-radius: 10px;
+  margin: 10px 0;
+  max-width: 400px;
+  background: #f7b3eb;
 }
 .genImage {
   display: flex;

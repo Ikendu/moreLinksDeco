@@ -49,14 +49,7 @@ export default function Service() {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <Traditional />
             </div>
           </div>
         </div>
@@ -79,14 +72,7 @@ export default function Service() {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <Traditional />
             </div>
           </div>
         </div>
@@ -96,27 +82,20 @@ export default function Service() {
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
+              data-bs-target="#collapsefour"
               aria-expanded="false"
-              aria-controls="collapseThree"
+              aria-controls="collapsefour"
             >
               Engagements Styles
             </button>
           </h2>
           <div
-            id="collapseThree"
+            id="collapsefour"
             class="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <Traditional />
             </div>
           </div>
         </div>
@@ -126,27 +105,20 @@ export default function Service() {
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
+              data-bs-target="#collapse5"
               aria-expanded="false"
-              aria-controls="collapseThree"
+              aria-controls="collapse5"
             >
               Celebration of Lives
             </button>
           </h2>
           <div
-            id="collapseThree"
+            id="collapse5"
             class="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <Traditional />
             </div>
           </div>
         </div>
@@ -156,27 +128,20 @@ export default function Service() {
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
+              data-bs-target="#collapse6"
               aria-expanded="false"
-              aria-controls="collapseThree"
+              aria-controls="collapse6"
             >
               Corporate Events
             </button>
           </h2>
           <div
-            id="collapseThree"
+            id="collapse6"
             class="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <Traditional />
             </div>
           </div>
         </div>
