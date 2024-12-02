@@ -20,8 +20,9 @@
 }
 .genImage img {
   max-width: 300px;
-  /* max-height: 400px; */
+  max-height: 320px;
   border-radius: 20px;
+  object-fit: cover;
 }
 @media (max-width: 400px) {
   .services {
