@@ -7,9 +7,9 @@
 .accordion-body {
   padding: 0;
 }
-.accordion-item{
+.accordion-item {
   margin: 10px;
-  background-color: none;
+  background-color: #f5ebf5;
 }
 .accordion-header {
   display: flex;
