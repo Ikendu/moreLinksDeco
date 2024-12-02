@@ -2,6 +2,8 @@ import React from "react";
 
 import "./service.css";
 import Traditional from "./Traditional";
+import Reception from "./Reception";
+import Engagement from "./Engagement";
 
 export default function Service() {
   return (
@@ -49,7 +51,7 @@ export default function Service() {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <Traditional />
+              <Reception />
             </div>
           </div>
         </div>
@@ -95,7 +97,7 @@ export default function Service() {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <Traditional />
+              <Engagement />
             </div>
           </div>
         </div>
