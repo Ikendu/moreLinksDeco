@@ -34,7 +34,6 @@ export default function Header() {
             />
           </div>
         </Link>
-        
 
         <ul className={!showNav ? "headerLinks" : "showNav"}>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
@@ -45,15 +44,15 @@ export default function Header() {
           </li>
 
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link to={"/services"} class="links">
-              <i class="fa-solid fa-toolbox"></i>Our Services
+            <Link to={"/about"} class="links">
+              <i class="fa-solid fa-users"></i>
+              About Us
             </Link>
           </li>
 
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link to={"/about"} class="links">
-              <i class="fa-solid fa-users"></i>
-              About Us
+            <Link to={"/services"} class="links">
+              <i class="fa-solid fa-toolbox"></i>Our Services
             </Link>
           </li>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>

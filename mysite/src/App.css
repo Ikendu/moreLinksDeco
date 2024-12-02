@@ -42,16 +42,24 @@ body {
   padding: 15px;
   background-color: #420b2d;
   border-radius: 50%;
+  margin-left: 8px;
   /* z-index: 200; */
 }
 .whatsappChat {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 8px;
   text-decoration: none;
   font-size: 1.4em;
+}
+.innerWhatsapp {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   cursor: pointer;
+  padding: 10px 30px;
+  background-color: #4a0440;
+  border-radius: 10px;
+  color: #d9dbdb;
 }
 
 .landingContent {
@@ -317,6 +325,13 @@ body {
   }
   .moreParagraph p {
     max-width: 350px;
+  }
+  .whatsappChat {
+    font-size: 1.2em;
+  }
+  .innerWhatsapp {
+    gap: 5px;
+    padding: 10px 15px;
   }
 }
 @media (max-width: 400px) {

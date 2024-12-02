@@ -29,8 +29,10 @@ export default function FrontServices() {
           }
           target="_blank"
         >
-          <i class="fa-brands fa-whatsapp "></i>
-          Tell us how you want it
+          <div className="innerWhatsapp">
+            <i class="fa-brands fa-whatsapp "></i>
+            Now tell us how you want it
+          </div>
         </Link>
       </div>
     </div>
