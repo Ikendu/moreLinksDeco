@@ -7,6 +7,8 @@ import image22 from "../../assets/images/image22.jpg";
 import image26 from "../../assets/images/image26.jpg";
 import image24 from "../../assets/images/image24.jpg";
 import image4 from "../../assets/images/image4.jpeg";
+import image40 from "../../assets/images/image40.jpg";
+import image41 from "../../assets/images/image41.jpg";
 Getter;
 export default function Reception() {
   return (
@@ -21,9 +23,6 @@ export default function Reception() {
         <a href={image12}>
           <img src={image12} alt="" />
         </a>
-        <a href={image20}>
-          <img src={image20} alt="" />
-        </a>
         <a href={image22}>
           <img src={image22} alt="" />
         </a>
@@ -32,6 +31,12 @@ export default function Reception() {
         </a>
         <a href={image24}>
           <img src={image24} alt="" />
+        </a>
+        <a href={image40}>
+          <img src={image40} alt="" />
+        </a>
+        <a href={image41}>
+          <img src={image41} alt="" />
         </a>
         <a href={image4}>
           <img src={image4} alt="" />
