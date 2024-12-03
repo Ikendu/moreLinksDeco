@@ -6,6 +6,7 @@ import Reception from "./Reception";
 import Engagement from "./Engagement";
 import LiveEvents from "./LiveEvents";
 import Birthdays from "./Birthdays";
+import Corporate from "./Corporate";
 import { Link } from "react-router-dom";
 
 export default function Service() {
@@ -177,7 +178,7 @@ export default function Service() {
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <Traditional />
+                <Corporate />
               </div>
             </div>
           </div>
