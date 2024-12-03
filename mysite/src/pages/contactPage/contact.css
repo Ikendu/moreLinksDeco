@@ -1,0 +1,85 @@
+.contactUs {
+  padding: 50px 0;
+}
+.contactFront {
+  background-image: url("../../assets/images/contactCover1.jpg");
+  background-attachment: fixed;
+  color: #e0dddd;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.contactOverlay {
+  position: absolute;
+  padding: 2px;
+  width: 100%;
+  height: 500px;
+  background: repeating-linear-gradient(
+    130deg,
+    #42022d,
+    #44022f88 55%,
+    #f5f3f34b 55% 100%
+  );
+}
+.contactSection {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenl;
+  margin: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contactDetails h3 {
+  font-size: 2em;
+  font-weight: bolder;
+}
+.fullDetails {
+  margin: 40px;
+  font-size: 20px;
+}
+.form {
+  width: 50%;
+}
+form {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.form input,
+textarea {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(94, 93, 94);
+  background-color: rgb(230, 213, 225);
+  font-size: 18px;
+}
+.form textarea {
+  height: 150px;
+}
+.form [type="submit"] {
+  background-color: #6c065f;
+  color: #d7d4d4;
+  font-size: 20px;
+}
+@media (max-width: 900px) {
+  .contactSection {
+    display: flex;
+    flex-direction: column;
+  }
+  .form {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .contactSection {
+    margin: 10px;
+  }
+  .fullDetails {
+    margin: 10px;
+    font-size: 16x;
+  }
+  .form {
+    width: 100%;
+  }
+}

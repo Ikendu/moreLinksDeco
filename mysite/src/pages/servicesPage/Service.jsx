@@ -18,15 +18,22 @@ export default function Service() {
         <div className="aboutMain">
           <h2>Our Service</h2>
           <p className="serviceMainPara">
-            <p>Wedding Décor:</p> Elegant ceremonies and receptions that capture
-            your love story.
-            <p>Corporate Events:</p> Professional setups that impress clients
-            and colleagues.
-            <p>Birthday & Private Parties:</p> Fun, vibrant, and memorable
-            decorations for all ages.
-            <p>Themed Events:</p> Creative concepts brought to life with
-            precision and flair. Let us handle the details while you enjoy the
-            celebration!
+            Wedding Décor:
+            <br />
+            Elegant ceremonies and receptions that capture your love story.
+            <br />
+            Corporate Events:
+            <br />
+            Professional setups that impress clients and colleagues.
+            <br />
+            Birthday & Private Parties:
+            <br />
+            Fun, vibrant, and memorable decorations for all ages.
+            <br />
+            Themed Events:
+            <br />
+            Creative concepts brought to life with precision and flair. Let us
+            handle the details while you enjoy the celebration!
           </p>
           <a href="#more_on_ervices">
             <button className="serviceButton">See More</button>
@@ -41,7 +48,7 @@ export default function Service() {
       >
         <i class="fa-brands fa-whatsapp whatsapp"></i>
       </Link>
-      
+
       <div id="more_on_ervices">
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
@@ -60,7 +67,7 @@ export default function Service() {
             <div
               id="collapseOne"
               class="accordion-collapse collapse show"
-             // data-bs-parent="#accordionExample"
+              // data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <Traditional />
@@ -83,7 +90,7 @@ export default function Service() {
             <div
               id="collapseTwo"
               class="accordion-collapse collapse"
-             // data-bs-parent="#accordionExample"
+              // data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <Reception />
@@ -106,7 +113,7 @@ export default function Service() {
             <div
               id="collapseThree"
               class="accordion-collapse collapse"
-             // data-bs-parent="#accordionExample"
+              // data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <LiveEvents />

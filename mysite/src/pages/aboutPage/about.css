@@ -189,6 +189,8 @@
   }
   .aboutMain p {
     width: max(68%, 380px);
+    background-color: #1312128f;
+    padding: 20px;
   }
   .moreChoose {
     flex-wrap: wrap;
@@ -198,8 +200,16 @@
   .aboutStory section {
     max-width: 500px;
   }
+  .aboutMain p {
+    width: 80%;
+  }
 }
-@media (max-width: 580px) {
+@media (max-width: 650px) {
+  .aboutMain p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 591px) {
   .aboutContainer h2 {
     font-size: 30px;
   }
@@ -208,10 +218,7 @@
   }
   .aboutMain p {
     width: 100%;
-    font-size: 16px;
     line-height: 30px;
-    background-color: #1312128f;
-    padding: 20px;
     border-radius: 10px;
     max-height: 300px;
     overflow: auto;
