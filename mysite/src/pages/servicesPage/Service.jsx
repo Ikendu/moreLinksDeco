@@ -33,7 +33,6 @@ export default function Service() {
           </a>
         </div>
       </div>
-
       <Link
         to={
           "https://wa.me/2348061632276?text=Hello%20there!%20I%20want%20to%20discuss%20with%20you."
@@ -42,6 +41,7 @@ export default function Service() {
       >
         <i class="fa-brands fa-whatsapp whatsapp"></i>
       </Link>
+      
       <div id="more_on_ervices">
         <div class="accordion" id="accordionExample">
           <div class="accordion-item">
@@ -60,7 +60,7 @@ export default function Service() {
             <div
               id="collapseOne"
               class="accordion-collapse collapse show"
-              data-bs-parent="#accordionExample"
+             // data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <Traditional />
@@ -83,7 +83,7 @@ export default function Service() {
             <div
               id="collapseTwo"
               class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
+             // data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <Reception />
@@ -106,7 +106,7 @@ export default function Service() {
             <div
               id="collapseThree"
               class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
+             // data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <LiveEvents />
@@ -129,7 +129,7 @@ export default function Service() {
             <div
               id="collapsefour"
               class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
+              //data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <Engagement />
@@ -152,7 +152,7 @@ export default function Service() {
             <div
               id="collapse5"
               class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
+              //data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <Birthdays />
@@ -175,7 +175,7 @@ export default function Service() {
             <div
               id="collapse6"
               class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
+              //data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <Corporate />
