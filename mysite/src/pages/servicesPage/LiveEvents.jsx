@@ -9,6 +9,8 @@ import image32 from "../../assets/images/image32.jpg";
 import image36 from "../../assets/images/image36.jpg";
 import image33 from "../../assets/images/image33.jpg";
 import image39 from "../../assets/images/image39.jpg";
+import image38 from "../../assets/images/image38.jpg";
+import image41 from "../../assets/images/image37.jpg";
 // import image4 from "../../assets/images/image33.jpeg";
 
 export default function LiveEvents() {
@@ -36,6 +38,12 @@ export default function LiveEvents() {
         </a>
         <a href={image39}>
           <img src={image39} alt="" />
+        </a>
+        <a href={image38}>
+          <img src={image38} alt="" />
+        </a>
+        <a href={image41}>
+          <img src={image41} alt="" />
         </a>
         <a href={image31}>
           <img src={image31} alt="" />
