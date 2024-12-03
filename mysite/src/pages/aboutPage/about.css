@@ -3,8 +3,8 @@
   padding: 40px 0px;
   position: relative;
 }
-.aboutFront {
-  background-image: url("../../assets/images/aboutbg.jpg");
+.serviceFront {
+  background-image: url("../../assets/images/image25.jpg");
   background-attachment: fixed;
   color: #e0dddd;
   background-repeat: no-repeat;
@@ -37,6 +37,7 @@
 }
 .aboutMain h2 {
   font-size: 50px;
+  text-align: left;
   font-family: "Montserrat Alternates", "Arial Narrow", Arial, sans-serif;
 }
 .aboutMain p {
@@ -215,7 +216,7 @@
     max-height: 300px;
     overflow: auto;
   }
-  ::-webkit-scrollbar{
+  ::-webkit-scrollbar {
     background: #bdbbbb;
     border-radius: 3px;
     width: 3px;

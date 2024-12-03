@@ -4,6 +4,9 @@ import image13 from "../../assets/images/image13.jpg";
 import image12 from "../../assets/images/image12.jpg";
 import image20 from "../../assets/images/image20.jpg";
 import image22 from "../../assets/images/image22.jpg";
+import image26 from "../../assets/images/image26.jpg";
+import image24 from "../../assets/images/image24.jpg";
+import image4 from "../../assets/images/image4.jpeg";
 Getter;
 export default function Reception() {
   return (
@@ -23,6 +26,15 @@ export default function Reception() {
         </a>
         <a href={image22}>
           <img src={image22} alt="" />
+        </a>
+        <a href={image26}>
+          <img src={image26} alt="" />
+        </a>
+        <a href={image24}>
+          <img src={image24} alt="" />
+        </a>
+        <a href={image4}>
+          <img src={image4} alt="" />
         </a>
       </div>
     </div>

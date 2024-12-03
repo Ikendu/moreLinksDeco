@@ -1,8 +1,29 @@
 .services {
   position: relative;
-  padding: 100px 20px;
+  padding: 50px 0px;
   background-color: #e2dce2;
-  /* margin-top: 50px; */
+}
+.serviceFront {
+  background-image: url("../../assets/images/aboutbg.jpg");
+  background-attachment: fixed;
+  color: #e0dddd;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+.serviceMainPara p {
+  font-weight: 900;
+}
+.serviceButton {
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: #871173;
+  font-weight: 900;
+}
+.serviceButton:hover {
+  color: #e2dce2;
+  background-color: #871173;
+  border: none;
 }
 .accordion-body {
   padding: 0;
