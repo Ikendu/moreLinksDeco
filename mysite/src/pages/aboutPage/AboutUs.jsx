@@ -90,7 +90,7 @@ export default function AboutUs() {
               </section>
             </div>
           </div>
-          <hr />
+          hr
           <div className="chooseMagic">
             <section>
               <h3>Let’s Make Magic Together</h3>
