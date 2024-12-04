@@ -9,7 +9,6 @@ import Birthdays from "./Birthdays";
 import Corporate from "./Corporate";
 import { Link } from "react-router-dom";
 import ScrollToTop from "../../components/ScrollToTop";
-import ServiceScroll from "./ServiceScroll";
 
 export default function Service() {
   return (

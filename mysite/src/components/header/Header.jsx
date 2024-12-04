@@ -37,18 +37,14 @@ export default function Header() {
 
         <ul className={!showNav ? "headerLinks" : "showNav"}>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link to={"/"} class="links" onClick={() => setShowNav(!showNav)}>
+            <Link to={"/"} class="links" onClick={() => setShowNav(false)}>
               <i class="fa-solid fa-house"></i>
               Home
             </Link>
           </li>
 
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link
-              to={"/about"}
-              class="links"
-              onClick={() => setShowNav(!showNav)}
-            >
+            <Link to={"/about"} class="links" onClick={() => setShowNav(false)}>
               <i class="fa-solid fa-users"></i>
               About Us
             </Link>
@@ -58,7 +54,7 @@ export default function Header() {
             <Link
               to={"/services"}
               class="links"
-              onClick={() => setShowNav(!showNav)}
+              onClick={() => setShowNav(false)}
             >
               <i class="fa-solid fa-toolbox"></i>Our Services
             </Link>
@@ -67,7 +63,7 @@ export default function Header() {
             <Link
               to={"/contact"}
               class="links"
-              onClick={() => setShowNav(!showNav)}
+              onClick={() => setShowNav(false)}
             >
               <i class="fa-solid fa-phone"></i>Contact us
             </Link>
@@ -76,7 +72,7 @@ export default function Header() {
             <Link
               to={"/blogpost"}
               class="links"
-              onClick={() => setShowNav(!showNav)}
+              onClick={() => setShowNav(false)}
             >
               <i class="fa-solid fa-blog"></i>Blog Post
             </Link>
@@ -84,7 +80,7 @@ export default function Header() {
         </ul>
         <i
           class="fa-solid fa-bars nav-bar"
-          onClick={() => setShowNav(!showNav)}
+          onClick={() => setShowNav(false)}
         ></i>
       </header>
     </div>
