@@ -11,11 +11,13 @@ import image33 from "../../assets/images/image33.jpg";
 import image39 from "../../assets/images/image39.jpg";
 import image38 from "../../assets/images/image38.jpg";
 import image41 from "../../assets/images/image37.jpg";
+import ServiceScroll from "./ServiceScroll";
 // import image4 from "../../assets/images/image33.jpeg";
 
 export default function LiveEvents() {
   return (
     <div>
+      <ServiceScroll />
       <div className="genImage">
         <a href={image28}>
           <img src={image28} alt="" />

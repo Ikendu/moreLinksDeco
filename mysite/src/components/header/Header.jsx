@@ -37,31 +37,47 @@ export default function Header() {
 
         <ul className={!showNav ? "headerLinks" : "showNav"}>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link to={"/"} class="links">
+            <Link to={"/"} class="links" onClick={() => setShowNav(!showNav)}>
               <i class="fa-solid fa-house"></i>
               Home
             </Link>
           </li>
 
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link to={"/about"} class="links">
+            <Link
+              to={"/about"}
+              class="links"
+              onClick={() => setShowNav(!showNav)}
+            >
               <i class="fa-solid fa-users"></i>
               About Us
             </Link>
           </li>
 
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link to={"/services"} class="links">
+            <Link
+              to={"/services"}
+              class="links"
+              onClick={() => setShowNav(!showNav)}
+            >
               <i class="fa-solid fa-toolbox"></i>Our Services
             </Link>
           </li>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link to={"/contact"} class="links">
+            <Link
+              to={"/contact"}
+              class="links"
+              onClick={() => setShowNav(!showNav)}
+            >
               <i class="fa-solid fa-phone"></i>Contact us
             </Link>
           </li>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link to={"/blogpost"} class="links">
+            <Link
+              to={"/blogpost"}
+              class="links"
+              onClick={() => setShowNav(!showNav)}
+            >
               <i class="fa-solid fa-blog"></i>Blog Post
             </Link>
           </li>

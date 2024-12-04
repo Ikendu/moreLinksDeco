@@ -1,9 +1,11 @@
 import React from "react";
 import "./about.css";
+import ScrollToTop from "../../components/ScrollToTop";
 
 export default function AboutUs() {
   return (
     <div className="aboutContainer">
+      <ScrollToTop />
       <div className="aboutFront">
         <div className="aboutOverlay"></div>
         <div className="aboutMain">

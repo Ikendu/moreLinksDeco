@@ -12,6 +12,7 @@ import Slider from "../components/sliders/SliderComponent";
 import MobileSlider from "../components/sliders/MobileSlider";
 import Header from "../components/header/Header";
 import { Link } from "react-router-dom";
+import ScrollToTop from "../components/ScrollToTop";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -35,6 +36,7 @@ export default function HomePage() {
   }, []);
   return (
     <div>
+      <ScrollToTop />
       <section>
         <div className="pageCover">
           <div className="overlay">

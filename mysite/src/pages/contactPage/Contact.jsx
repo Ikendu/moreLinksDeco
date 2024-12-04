@@ -1,9 +1,11 @@
 import React from "react";
 import "./contact.css";
+import ScrollToTop from "../../components/ScrollToTop";
 
 export default function Contact() {
   return (
     <div className="contactUs">
+      <ScrollToTop/>
       <div>
         <div className="contactFront">
           <div className="contactOverlay"></div>

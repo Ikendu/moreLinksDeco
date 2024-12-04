@@ -8,10 +8,13 @@ import LiveEvents from "./LiveEvents";
 import Birthdays from "./Birthdays";
 import Corporate from "./Corporate";
 import { Link } from "react-router-dom";
+import ScrollToTop from "../../components/ScrollToTop";
+import ServiceScroll from "./ServiceScroll";
 
 export default function Service() {
   return (
     <div className="services">
+      <ScrollToTop />
       {/* This is being styled in about-us folder, just few style will come from service folder */}
       <div className="serviceFront">
         <div className="aboutOverlay"></div>
@@ -60,6 +63,7 @@ export default function Service() {
                 data-bs-target="#collapseOne"
                 aria-expanded="true"
                 aria-controls="collapseOne"
+                onClick={() => window.scrollTo(0, 700)}
               >
                 Traditional Wedding Styles
               </button>
@@ -67,7 +71,7 @@ export default function Service() {
             <div
               id="collapseOne"
               class="accordion-collapse collapse show"
-              // data-bs-parent="#accordionExample"
+              data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <Traditional />
@@ -83,6 +87,7 @@ export default function Service() {
                 data-bs-target="#collapseTwo"
                 aria-expanded="false"
                 aria-controls="collapseTwo"
+                onClick={() => window.scrollTo(0, 700)}
               >
                 Receptions
               </button>
@@ -90,7 +95,7 @@ export default function Service() {
             <div
               id="collapseTwo"
               class="accordion-collapse collapse"
-              // data-bs-parent="#accordionExample"
+              data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <Reception />
@@ -106,6 +111,7 @@ export default function Service() {
                 data-bs-target="#collapseThree"
                 aria-expanded="false"
                 aria-controls="collapseThree"
+                onClick={() => window.scrollTo(0, 700)}
               >
                 Celebration of Lives
               </button>
@@ -113,7 +119,7 @@ export default function Service() {
             <div
               id="collapseThree"
               class="accordion-collapse collapse"
-              // data-bs-parent="#accordionExample"
+              data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <LiveEvents />
@@ -129,6 +135,7 @@ export default function Service() {
                 data-bs-target="#collapsefour"
                 aria-expanded="false"
                 aria-controls="collapsefour"
+                onClick={() => window.scrollTo(0, 700)}
               >
                 Engagements Styles
               </button>
@@ -136,7 +143,7 @@ export default function Service() {
             <div
               id="collapsefour"
               class="accordion-collapse collapse"
-              //data-bs-parent="#accordionExample"
+              data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <Engagement />
@@ -152,6 +159,7 @@ export default function Service() {
                 data-bs-target="#collapse5"
                 aria-expanded="false"
                 aria-controls="collapse5"
+                onClick={() => window.scrollTo(0, 700)}
               >
                 Birthday Celebrations
               </button>
@@ -159,7 +167,7 @@ export default function Service() {
             <div
               id="collapse5"
               class="accordion-collapse collapse"
-              //data-bs-parent="#accordionExample"
+              data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <Birthdays />
@@ -175,6 +183,7 @@ export default function Service() {
                 data-bs-target="#collapse6"
                 aria-expanded="false"
                 aria-controls="collapse6"
+                onClick={() => window.scrollTo(0, 700)}
               >
                 Corporate Events
               </button>
@@ -182,7 +191,7 @@ export default function Service() {
             <div
               id="collapse6"
               class="accordion-collapse collapse"
-              //data-bs-parent="#accordionExample"
+              data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
                 <Corporate />
