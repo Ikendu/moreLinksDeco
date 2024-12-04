@@ -1,4 +1,26 @@
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: rgb(148, 8, 139);
+  font-family: "Dancing Script";
+}
 .emptyComp {
   display: flex;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.emptyComp img {
+  width: 200px;
+  height: 200px;
+  border: 4px dotted rgb(146, 13, 133);
+  border-radius: 20px;
+}
+@media (max-width: 550px) {
+  .emptyComp img {
+    width: 100px;
+    height: 100px;
+  }
 }
