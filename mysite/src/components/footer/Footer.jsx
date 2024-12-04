@@ -36,7 +36,7 @@ export default function Footer() {
                   <Link to="/gallery">🎈 Event Styling</Link>
                 </li>
                 <li>
-                  <a href="">💐 Floral Arrangements</a>
+                  <a href="/gallery">💐 Floral Arrangements</a>
                 </li>
                 <li>
                   <Link to="/gallery">🎀 Custom Decor </Link>
@@ -64,16 +64,16 @@ export default function Footer() {
                   <Link to="/services">Our Solutions</Link>
                 </li>
                 <li>
-                  <Link to="/gallery">Our Gallary.</Link>
+                  <Link to="/contact">Contact us</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/testimony">Clients Testimonies</Link>
+                </li> */}
+                <li>
+                  <Link to="/blogpost">Event planning trends</Link>
                 </li>
                 <li>
-                  <Link to="/blogpost">Event planning trends.</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Reach out today.</Link>
+                  <Link to="/gallery">Our Gallary</Link>
                 </li>
               </ul>
             </div>
