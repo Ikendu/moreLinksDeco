@@ -57,14 +57,7 @@ export default function HomePage() {
           <img src={divider} alt="" className="divider" />
         </div>{" "}
       </section>
-      <Link
-        to={
-          "https://wa.me/2348061632276?text=Hello%20there!%20I%20want%20to%20discuss%20with%20you."
-        }
-        target="_blank"
-      >
-        <i class="fa-brands fa-whatsapp whatsapp"></i>
-      </Link>
+      
       <section id="body">
         <ChooseUs />
       </section>

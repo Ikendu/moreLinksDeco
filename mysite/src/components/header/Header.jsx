@@ -80,7 +80,7 @@ export default function Header() {
         </ul>
         <i
           class="fa-solid fa-bars nav-bar"
-          onClick={() => setShowNav(false)}
+          onClick={() => setShowNav(!showNav)}
         ></i>
       </header>
     </div>
