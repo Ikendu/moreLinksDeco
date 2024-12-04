@@ -7,7 +7,6 @@ Getter;
 export default function Corporate() {
   return (
     <div>
-      <ServiceScroll />
       <h4>Pictures Loading....</h4>
       <div className="genImage">
         <a href={logoImage}>

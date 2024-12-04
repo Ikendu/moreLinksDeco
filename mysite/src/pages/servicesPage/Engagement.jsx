@@ -8,7 +8,6 @@ Getter;
 export default function Engagement() {
   return (
     <div>
-      <ServiceScroll />
       <div className="genImage">
         <a href={image14}>
           <img src={image14} alt="" />

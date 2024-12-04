@@ -17,7 +17,6 @@ import ServiceScroll from "./ServiceScroll";
 export default function LiveEvents() {
   return (
     <div>
-      <ServiceScroll />
       <div className="genImage">
         <a href={image28}>
           <img src={image28} alt="" />

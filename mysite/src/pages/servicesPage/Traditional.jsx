@@ -5,13 +5,11 @@ import image16 from "../../assets/images/image16.jpg";
 import image10 from "../../assets/images/image10.jpg";
 import image19 from "../../assets/images/image19.jpg";
 import image42 from "../../assets/images/image42.jpg";
-import ServiceScroll from "./ServiceScroll";
 // import image17 from "../../assets/images/image18.jpg";
 Getter;
 export default function Traditional() {
   return (
     <div>
-      <ServiceScroll />
       <div className="genImage">
         <a href={aboutbg}>
           <img src={aboutbg} alt="" />
