@@ -53,6 +53,7 @@ textarea {
   border: 1px solid rgb(94, 93, 94);
   background-color: rgb(230, 213, 225);
   font-size: 18px;
+  margin: 10px 0;
 }
 .form textarea {
   height: 150px;
