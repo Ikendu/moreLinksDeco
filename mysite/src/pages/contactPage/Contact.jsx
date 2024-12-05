@@ -1,11 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./contact.css";
 import ScrollToTop from "../../components/ScrollToTop";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        "http://your-backend-url/contact.php",
+        formData
+      );
+      setStatus("Message sent successfully!");
+    } catch (error) {
+      setStatus("Failed to send message. Try again later.");
+    }
+  };
+
   return (
     <div className="contactUs">
-      <ScrollToTop/>
+      <ScrollToTop />
       <div>
         <div className="contactFront">
           <div className="contactOverlay"></div>
