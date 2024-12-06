@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import emailjs from "@emailjs/browser";
 import "./contact.css";
 import ScrollToTop from "../../components/ScrollToTop";
 
@@ -7,24 +8,41 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
   const [status, setStatus] = useState("");
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
+    console.log(formData);
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://your-backend-url/contact.php",
+        "https://moredeco.com.ng/contact.php",
         formData
       );
+      console.log(response);
+      // setFormData({})
       setStatus("Message sent successfully!");
     } catch (error) {
       setStatus("Failed to send message. Try again later.");
     }
+    emailjs
+      .send("service_2yry7mf", "template_flz454q", formData, {
+        publicKey: "iPQWPyYdO6yD4VgQA",
+      })
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response);
+        },
+        (err) => {
+          console.log("FAILED...", err);
+        }
+      );
   };
 
   return (
@@ -56,7 +74,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="form">
-            <form action="">
+            <form onSubmit={handleSubmit}>
               <h3>Tell us what is on your mind</h3>
               <div>
                 <label htmlFor="name">Name:</label>
@@ -64,6 +82,8 @@ export default function Contact() {
                   type="text"
                   id="name"
                   name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Your fullname"
                 />
               </div>
@@ -72,7 +92,9 @@ export default function Contact() {
                 <input
                   type="email"
                   name="email"
+                  value={formData.email}
                   id="email"
+                  onChange={handleChange}
                   placeholder="Active email"
                 />
               </div>
@@ -81,15 +103,23 @@ export default function Contact() {
                 <input
                   type="text"
                   name="phone"
+                  value={formData.phone}
                   id="phone"
+                  onChange={handleChange}
                   placeholder="Active phone number"
                 />
               </div>
               <div>
                 <label htmlFor="message">Message for us </label>
-                <textarea name="message" id="message"></textarea>
+                <textarea
+                  name="message"
+                  id="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                ></textarea>
               </div>
               <input type="submit" />
+              {status && <p>{status}</p>}
             </form>
           </div>
         </div>
