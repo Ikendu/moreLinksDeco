@@ -1,10 +1,10 @@
 import React from "react";
 import image1 from "../assets/images/image1.jpeg";
 import image2 from "../assets/images/image2.jpeg";
-import image3 from "../assets/images/image3.jpeg";
+import image125 from "../assets/images/image12.5.jpg";
 import image4 from "../assets/images/image4.jpeg";
 import image5 from "../assets/images/image5.jpeg";
-import image9 from "../assets/images/image9.jpg";
+import image13 from "../assets/images/image13.jpg";
 import logoImage from "../assets/images/logoImage.png";
 import Getter from "../assets/images/getter";
 
@@ -54,7 +54,7 @@ export default function ChooseUs() {
               transform ordinary venues into extraordinary settings.
             </p>
           </div>
-          <img src={image3} alt="" className="serviceIage" />
+          <img src={image125} alt="" className="serviceIage" />
         </div>
         <div className="imageDetails2">
           <div className="pageContent">
@@ -88,7 +88,7 @@ export default function ChooseUs() {
               tailored to your style and theme.
             </p>
           </div>
-          <img src={image9} alt="" className="serviceIage" />
+          <img src={image13} alt="" className="serviceIage" />
         </div>
       </div>
     </div>

@@ -84,9 +84,10 @@ body {
   color: #d9dbdb;
   border: 2px solid #cc73b1;
   box-shadow: 0 9px #cc73b1;
+  font-weight: 800;
 }
 .heroButton {
-  padding: 17px;
+  padding: 11px 30px;
   background-color: #6e2858;
   font-size: 16px;
   border: 2px solid #cc73b1;
@@ -94,11 +95,13 @@ body {
   margin: 15px;
   cursor: pointer;
   box-shadow: 0 9px #cc73b1;
-  color: #b8b9b8;
+  color: #b8b9b8;  
+  font-weight: 800;
 }
 .heroButton:hover,
 .innerWhatsapp:hover {
   background-color: #43ec49;
+  font-weight: 800;
   color: #41073f;
 }
 .heroButton:active,

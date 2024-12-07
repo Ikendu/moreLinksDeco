@@ -1,0 +1,21 @@
+.fullISpace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.fullImage {
+  max-width: 90hv;
+  max-height: 90vh;
+}
+.sliderIage {
+  width: 80%;
+  border-radius: 20px;
+  margin-top: 10px;
+}
