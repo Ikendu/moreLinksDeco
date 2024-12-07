@@ -11,6 +11,7 @@ import Contact from "./pages/contactPage/Contact";
 import BlogPost from "./pages/blogPage/BlogPost";
 import Gallary from "./pages/gallaryPage/Gallary";
 import Testimony from "./pages/testimonyPage/Testimony";
+import FullImage from "./components/sliders/FullImage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="blogpost" element={<BlogPost />} />
           <Route path="gallery" element={<Gallary />} />
           <Route path="testimony" element={<Testimony />} />
+          <Route path="image/:imageId" element={<FullImage />} />
         </Route>
       </Routes>
     </>

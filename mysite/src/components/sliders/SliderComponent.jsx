@@ -32,8 +32,8 @@ function CenterMode() {
     slidesToShow: 3,
     speed: 500,
   };
-  const openFullImage = (imageName, imageIdx) => {
-    navigate(`image/${imageName}/${imageIdx}`);
+  const openFullImage = (imageIdx) => {
+    navigate(`image/${imageIdx}`);
   };
   return (
     <div>
