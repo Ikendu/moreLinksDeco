@@ -5,17 +5,37 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
+  z-index: 101;
+}
+.fullImage {
+  max-width: 95vw;
+  max-height: 100vh;
+  padding-top: 10px;
+}
+.fa-beat-fade {
+  position: absolute;
+  color: aliceblue;
+  margin: 10px;
+  font-size: 20px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 50%;
+}
+.fa-beat-fade:hover {
+  background-color: #ef0303;
+}
+.centerImage {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
 }
-.fullImage {
-  max-width: 90hv;
-  max-height: 90vh;
+@media (max-width: 700px) {
+  .fa-beat-fade {
+    font-size: 18px;
+  }
 }
-.sliderIage {
-  width: 80%;
-  border-radius: 20px;
-  margin-top: 10px;
+@media (max-width: 400px) {
+  .fa-beat-fade {
+    font-size: 14px;
+  }
 }

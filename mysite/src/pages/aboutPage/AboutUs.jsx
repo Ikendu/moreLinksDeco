@@ -1,14 +1,21 @@
 import React from "react";
 import "./about.css";
 import ScrollToTop from "../../components/ScrollToTop";
+import { useNavigate } from "react-router-dom";
 
 export default function AboutUs() {
+  const navigate = useNavigate();
+
   return (
     <div className="aboutContainer">
       <ScrollToTop />
+
       <div className="aboutFront">
         <div className="aboutOverlay"></div>
         <div className="aboutMain">
+          <div onClick={navigate(-1)}>
+            <i class="fa-solid fa-arrow-left fa-beat-fade iconStyle"></i>
+          </div>
           <h2>About Us</h2>
           <p>
             At More-Links Event Deco, we transform ordinary spaces into

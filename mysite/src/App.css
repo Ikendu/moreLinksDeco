@@ -43,7 +43,7 @@ body {
   background-color: #420b2d;
   border-radius: 50%;
   margin-left: 8px;
-  /* z-index: 200; */
+  z-index: 102;
 }
 
 .landingContent {
