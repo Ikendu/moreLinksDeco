@@ -31,18 +31,18 @@ export default function Contact() {
     } catch (error) {
       setStatus("Failed to send message. Try again later.");
     }
-    emailjs
-      .send("service_2yry7mf", "template_flz454q", formData, {
-        publicKey: "iPQWPyYdO6yD4VgQA",
-      })
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response);
-        },
-        (err) => {
-          console.log("FAILED...", err);
-        }
-      );
+    // emailjs
+    //   .send("service_2yry7mf", "template_flz454q", formData, {
+    //     publicKey: "iPQWPyYdO6yD4VgQA",
+    //   })
+    //   .then(
+    //     (response) => {
+    //       console.log("SUCCESS!", response);
+    //     },
+    //     (err) => {
+    //       console.log("FAILED...", err);
+    //     }
+    //   );
   };
 
   return (
@@ -119,6 +119,13 @@ export default function Contact() {
                 ></textarea>
               </div>
               <input type="submit" />
+              <button>
+                {status ? (
+                  <i class="fa-solid fa-spinner fa-spin-pulse"></i>
+                ) : (
+                  "Submit"
+                )}
+              </button>
               {status && <p>{status}</p>}
             </form>
           </div>
