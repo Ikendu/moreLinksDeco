@@ -26,7 +26,6 @@ export default function Contact() {
         formData
       );
       console.log(response);
-      // setFormData({})
       setStatus("Message sent successfully!");
     } catch (error) {
       setStatus("Failed to send message. Try again later.");

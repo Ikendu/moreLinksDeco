@@ -42,9 +42,11 @@ export default function HomePage() {
           <div className="overlay">
             <div className="landingContent">
               <h1>Transform Your Event into a Magical Experience</h1>
-              <p>Every Occasion Deserves to Be Unforgettable.</p>
-              <h3>Welcome to More-Links Event Decoration</h3>
-              <h3>Where Elegance Meets Creativity</h3>
+              <p>
+                <b>Every Occasion Deserves to Be Unforgettable.</b>
+              </p>
+              <p>Welcome to More-Links Event Decoration</p>
+              <p>Where Elegance Meets Creativity</p>
               <a href="#body">
                 <input
                   type="button"
@@ -57,7 +59,7 @@ export default function HomePage() {
           <img src={divider} alt="" className="divider" />
         </div>{" "}
       </section>
-      
+
       <section id="body">
         <ChooseUs />
       </section>
