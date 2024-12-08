@@ -7,10 +7,11 @@ import Engagement from "./Engagement";
 import LiveEvents from "./LiveEvents";
 import Birthdays from "./Birthdays";
 import Corporate from "./Corporate";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ScrollToTop from "../../components/ScrollToTop";
 
 export default function Service() {
+  const navigate = useNavigate();
   return (
     <div className="services">
       <ScrollToTop />
@@ -18,6 +19,9 @@ export default function Service() {
       <div className="serviceFront">
         <div className="aboutOverlay"></div>
         <div className="aboutMain">
+          <div onClick={() => navigate(-1)}>
+            <i class="fa-solid fa-arrow-left fa-beat-fade iconStyle"></i>
+          </div>
           <h2>Our Service</h2>
           <p className="serviceMainPara">
             Wedding Décor:

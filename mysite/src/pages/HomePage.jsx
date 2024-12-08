@@ -57,7 +57,7 @@ export default function HomePage() {
             </div>
           </div>
           <img src={divider} alt="" className="divider" />
-        </div>{" "}
+        </div>
       </section>
 
       <section id="body">

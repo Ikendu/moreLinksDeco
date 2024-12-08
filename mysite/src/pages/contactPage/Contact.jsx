@@ -3,8 +3,10 @@ import axios from "axios";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 import ScrollToTop from "../../components/ScrollToTop";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -30,18 +32,18 @@ export default function Contact() {
     } catch (error) {
       setStatus("Failed to send message. Try again later.");
     }
-    // emailjs
-    //   .send("service_2yry7mf", "template_flz454q", formData, {
-    //     publicKey: "iPQWPyYdO6yD4VgQA",
-    //   })
-    //   .then(
-    //     (response) => {
-    //       console.log("SUCCESS!", response);
-    //     },
-    //     (err) => {
-    //       console.log("FAILED...", err);
-    //     }
-    //   );
+    emailjs
+      .send("service_2yry7mf", "template_flz454q", formData, {
+        publicKey: "iPQWPyYdO6yD4VgQA",
+      })
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response);
+        },
+        (err) => {
+          console.log("FAILED...", err);
+        }
+      );
   };
 
   return (
@@ -50,7 +52,11 @@ export default function Contact() {
       <div>
         <div className="contactFront">
           <div className="contactOverlay"></div>
+
           <div className="aboutMain">
+            <div onClick={() => navigate(-1)}>
+              <i class="fa-solid fa-arrow-left fa-beat-fade iconStyle"></i>
+            </div>
             <h2>Contact Us Today</h2>
             <p>
               At More-Links Deco, we believe every event deserves a touch of

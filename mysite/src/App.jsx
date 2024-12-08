@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import HomePage from "./pages/HomePage";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 import Service from "./pages/servicesPage/Service";
 import AboutUs from "./pages/aboutPage/AboutUs";
@@ -19,13 +19,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="services" element={<Service />} />
-          <Route path="about" element={<AboutUs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="blogpost" element={<BlogPost />} />
-          <Route path="gallery" element={<Gallary />} />
-          <Route path="testimony" element={<Testimony />} />
-          <Route path="image/:imageId" element={<FullImage />} />
+          <Route path="/services" element={<Service />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blogpost" element={<BlogPost />} />
+          <Route path="/gallery" element={<Gallary />} />
+          <Route path="/testimony" element={<Testimony />} />
+          <Route path="/image/:imageId" element={<FullImage />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
     </>
