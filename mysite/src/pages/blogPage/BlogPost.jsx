@@ -34,7 +34,19 @@ export default function BlogPost({ postId }) {
         <div onClick={() => navigate(-1)}>
           <i class="fa-solid fa-arrow-left fa-beat-fade blogBackIcon"></i>
         </div>
-        <EmptyComp />
+        <div>
+          <h1>{post.title}</h1>
+          <p>{post.content}</p>
+          <div className="reaction-buttons">
+            <button onClick={() => handleReaction("like")}>
+              👍 Like ({likeCount})
+            </button>
+            <button onClick={() => handleReaction("love")}>
+              ❤️ Love ({loveCount})
+            </button>
+          </div>
+          <CommentSection postId={postId} />
+        </div>
       </div>
     </div>
   );
