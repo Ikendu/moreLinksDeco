@@ -39,45 +39,64 @@ export default function Header() {
 
         <ul className={!showNav ? "headerLinks" : "showNav"}>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link to={"/"} class="links" onClick={() => setShowNav(false)}>
+            <div
+              class="links"
+              onClick={() => {
+                setShowNav(false);
+                navigate("/");
+              }}
+            >
               <i class="fa-solid fa-house"></i>
               Home
-            </Link>
+            </div>
           </li>
 
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link to={"/about"} class="links" onClick={() => setShowNav(false)}>
+            <div
+              to={"/"}
+              class="links"
+              onClick={() => {
+                setShowNav(false);
+                navigate("/about");
+              }}
+            >
               <i class="fa-solid fa-users"></i>
               About Us
-            </Link>
+            </div>
           </li>
 
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link
-              to={"/services"}
+            <div
               class="links"
-              onClick={() => setShowNav(false)}
+              onClick={() => {
+                setShowNav(false);
+                navigate("/services");
+              }}
             >
               <i class="fa-solid fa-toolbox"></i>Our Services
-            </Link>
+            </div>
           </li>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link
-              to={"/contact"}
+            <div
               class="links"
-              onClick={() => setShowNav(false)}
+              onClick={() => {
+                setShowNav(false);
+                navigate("/contact");
+              }}
             >
               <i class="fa-solid fa-phone"></i>Contact us
-            </Link>
+            </div>
           </li>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>
-            <Link
-              to={"/blogpost"}
+            <div
               class="links"
-              onClick={() => setShowNav(false)}
+              onClick={() => {
+                setShowNav(false);
+                navigate("/blogpost");
+              }}
             >
               <i class="fa-solid fa-blog"></i>Blog Post
-            </Link>
+            </div>
           </li>
         </ul>
         <i
