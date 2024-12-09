@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import logoImage from "../../assets/images/logoImage.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./header.css";
 
 export default function Header() {
+  const navigate = useNavigate();
+
   const [smallHeader, setSmallHeader] = useState(false);
   const [showNav, setShowNav] = useState(false);
 
@@ -24,7 +26,7 @@ export default function Header() {
   return (
     <div>
       <header>
-        <Link to={"/"}>
+        <div onClick={() => navigate("/")}>
           <div className="logoSection">
             <img
               src={logoImage}
@@ -33,7 +35,7 @@ export default function Header() {
               height={smallHeader ? 40 : 60}
             />
           </div>
-        </Link>
+        </div>
 
         <ul className={!showNav ? "headerLinks" : "showNav"}>
           <li className={smallHeader ? "reduceLink" : "increaseLink"}>

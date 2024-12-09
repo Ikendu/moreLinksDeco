@@ -12,12 +12,14 @@ const CommentSection = ({ postId }) => {
   }, [postId]);
 
   const addComment = () => {
-    axios
-      .post(`/api/post/${postId}/comment`, { comment: newComment })
-      .then((response) => {
-        setComments((prev) => [...prev, response.data.comment]);
-        setNewComment("");
-      });
+    if (newComment.trim()) {
+      axios
+        .post(`/api/post/${postId}/comment`, { comment: newComment })
+        .then((response) => {
+          setComments((prev) => [...prev, response.data.comment]);
+          setNewComment("");
+        });
+    }
   };
 
   return (
@@ -32,7 +34,7 @@ const CommentSection = ({ postId }) => {
         <button onClick={addComment}>Submit</button>
       </div>
       <ul className="comments-list">
-        {comments.map((comment) => (
+        {comments?.map((comment) => (
           <li key={comment.id}>
             <strong>{comment.username}:</strong> {comment.text}
           </li>
