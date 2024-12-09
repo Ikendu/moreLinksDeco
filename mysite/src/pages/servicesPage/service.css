@@ -9,7 +9,7 @@
   color: #e0dddd;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 500px;
 }
 .serviceMainPara p {
   font-weight: 900;
@@ -62,6 +62,10 @@
   .services {
     padding: 50px 5px;
     /* margin-top: 50px; */
+  }
+  .serviceHead {
+    font-size: 35px !important;
+    margin-bottom: 15px;
   }
   .serviceButton {
     padding: 8px 18px;

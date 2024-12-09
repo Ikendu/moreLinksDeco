@@ -9,6 +9,7 @@
   background-size: cover;
   height: 500px;
 }
+
 .contactOverlay {
   position: absolute;
   padding: 2px;
@@ -45,7 +46,7 @@ form {
   flex-direction: column;
 }
 .form input,
-textarea {
+textarea, .btnSend {
   width: 100%;
   display: block;
   padding: 10px;
@@ -58,7 +59,7 @@ textarea {
 .form textarea {
   height: 150px;
 }
-.form [type="submit"] {
+.btnSend {
   background-color: #6c065f;
   color: #d7d4d4;
   font-size: 20px;
@@ -76,11 +77,20 @@ textarea {
   .contactSection {
     margin: 10px;
   }
+  .contactHead {
+    font-size: 40px !important;
+    margin-bottom: 20px !important;
+  }
   .fullDetails {
     margin: 10px;
     font-size: 16x;
   }
   .form {
     width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  .contactHead {
+    font-size: 30px !important;
   }
 }

@@ -22,7 +22,7 @@ export default function Service() {
           <div onClick={() => navigate(-1)}>
             <i class="fa-solid fa-arrow-left fa-beat-fade iconStyle"></i>
           </div>
-          <h2>Our Service</h2>
+          <h2 className="serviceHead">Our Service</h2>
           <p className="serviceMainPara">
             Wedding Décor:
             <br />

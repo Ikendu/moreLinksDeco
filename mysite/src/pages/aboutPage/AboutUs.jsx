@@ -13,7 +13,7 @@ export default function AboutUs() {
       <div className="aboutFront">
         <div className="aboutOverlay"></div>
         <div className="aboutMain">
-          <div onClick={()=>navigate(-1)}>
+          <div onClick={() => navigate(-1)}>
             <i class="fa-solid fa-arrow-left fa-beat-fade iconStyle"></i>
           </div>
           <h2>About Us</h2>

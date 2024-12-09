@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -22,28 +23,32 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     console.log(formData);
     e.preventDefault();
+    setLoading(true);
     try {
       const response = await axios.post(
         "https://moredeco.com.ng/contact.php",
         formData
       );
       console.log(response);
+      setLoading(false);
       setStatus("Message sent successfully!");
     } catch (error) {
       setStatus("Failed to send message. Try again later.");
     }
-    emailjs
-      .send("service_2yry7mf", "template_flz454q", formData, {
-        publicKey: "iPQWPyYdO6yD4VgQA",
-      })
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response);
-        },
-        (err) => {
-          console.log("FAILED...", err);
-        }
-      );
+
+    //   emailjs
+    //     .send("service_2yry7mf", "template_flz454q", formData, {
+    //       publicKey: "iPQWPyYdO6yD4VgQA",
+    //     })
+    //     .then(
+    //       (response) => {
+    //         console.log("SUCCESS!", response);
+    //         setLoading(false);
+    //       },
+    //       (err) => {
+    //         console.log("FAILED...", err);
+    //       }
+    //     );
   };
 
   return (
@@ -57,7 +62,7 @@ export default function Contact() {
             <div onClick={() => navigate(-1)}>
               <i class="fa-solid fa-arrow-left fa-beat-fade iconStyle"></i>
             </div>
-            <h2>Contact Us Today</h2>
+            <h2 className="contactHead">Contact Us Today</h2>
             <p>
               At More-Links Deco, we believe every event deserves a touch of
               magic. Whether you're planning a wedding, corporate event,
@@ -84,6 +89,7 @@ export default function Contact() {
               <div>
                 <label htmlFor="name">Name:</label>
                 <input
+                  required
                   type="text"
                   id="name"
                   name="name"
@@ -95,6 +101,7 @@ export default function Contact() {
               <div>
                 <label htmlFor="email">Email:</label>
                 <input
+                  required
                   type="email"
                   name="email"
                   value={formData.email}
@@ -106,6 +113,7 @@ export default function Contact() {
               <div>
                 <label htmlFor="phone">Phone Number: </label>
                 <input
+                  required
                   type="text"
                   name="phone"
                   value={formData.phone}
@@ -117,15 +125,15 @@ export default function Contact() {
               <div>
                 <label htmlFor="message">Message for us </label>
                 <textarea
+                  required
                   name="message"
                   id="message"
                   value={formData.message}
                   onChange={handleChange}
                 ></textarea>
               </div>
-              <input type="submit" />
-              <button>
-                {status ? (
+              <button className="btnSend">
+                {loading ? (
                   <i class="fa-solid fa-spinner fa-spin-pulse"></i>
                 ) : (
                   "Submit"
