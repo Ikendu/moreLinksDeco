@@ -2,6 +2,41 @@ import React from "react";
 import "./about.css";
 import ScrollToTop from "../../components/ScrollToTop";
 import { useNavigate } from "react-router-dom";
+import pica from "../../assets/images/pica.png";
+import picb from "../../assets/images/picb.png";
+import picc from "../../assets/images/picc.png";
+import picd from "../../assets/images/picd.jpg";
+const team = [
+  {
+    id: 1,
+    title: "",
+    name: " Engr. Chibundu David Aniede",
+    image: pica,
+    position: "CEO More-Links Concept",
+  },
+  {
+    id: 2,
+    title: "Project Coordinator",
+    name: "Tochukwu Ngene",
+    image: picb,
+    position: "More-Links Concept",
+  },
+  {
+    id: 3,
+    title: "Lead Decorator",
+    name: "Michael Abuchi",
+    image: picc,
+    position: "More-Links Concept",
+  },
+  {
+    id: 4,
+    title: "Design Specialist",
+    name: "Thankgod Ekene",
+    image: picd,
+    position: "More-Links Concept",
+  },
+];
+const teamMembers = team.filter((person) => person.id != 1);
 
 export default function AboutUs() {
   const navigate = useNavigate();
@@ -40,6 +75,25 @@ export default function AboutUs() {
               story—your story—through design, color, and atmosphere.
             </p>
           </section>
+          <div className="imageSection">
+            <img src={pica} alt="" className="aboutPic" />
+            <p>
+              <br /> <b>{team[0].title}</b>
+              {team[0].name}
+              <b> {team[0].position}</b>
+            </p>
+          </div>
+        </div>
+        <div className="teamMembers ">
+          {teamMembers.map((member) => (
+            <div className="imageSection teamMem">
+              <img src={member.image} alt="" className="aboutPic teampic" />
+              <p>
+                <br /> <b>{member.title}</b>
+                {member.name}
+              </p>
+            </div>
+          ))}
         </div>
         {/* <hr /> */}
         <div className="aboutApart">

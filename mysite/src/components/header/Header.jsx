@@ -87,7 +87,7 @@ export default function Header() {
               <i class="fa-solid fa-phone"></i>Contact us
             </div>
           </li>
-          <li className={smallHeader ? "reduceLink" : "increaseLink"}>
+          {/* <li className={smallHeader ? "reduceLink" : "increaseLink"}>
             <div
               class="links"
               onClick={() => {
@@ -97,7 +97,7 @@ export default function Header() {
             >
               <i class="fa-solid fa-blog"></i>Blog Post
             </div>
-          </li>
+          </li> */}
         </ul>
         <i
           class="fa-solid fa-bars nav-bar"
