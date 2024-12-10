@@ -5,35 +5,36 @@ import { useNavigate } from "react-router-dom";
 import pica from "../../assets/images/pica.png";
 import picb from "../../assets/images/picb.png";
 import picc from "../../assets/images/picc.png";
-import picd from "../../assets/images/picd.jpg";
+import picd from "../../assets/images/picd1.png";
+const teamFacebook = <i class="fa-brands fa-facebook"></i>;
 const team = [
   {
     id: 1,
-    title: "",
-    name: " Engr. Chibundu David Aniede",
+    title: "CEO More-Links Concept",
+    name: " Engr. David Aniede",
     image: pica,
-    position: "CEO More-Links Concept",
+    media: teamFacebook,
   },
   {
     id: 2,
     title: "Project Coordinator",
     name: "Tochukwu Ngene",
     image: picb,
-    position: "More-Links Concept",
+    media: teamFacebook,
   },
   {
     id: 3,
     title: "Lead Decorator",
     name: "Michael Abuchi",
     image: picc,
-    position: "More-Links Concept",
+    media: teamFacebook,
   },
   {
     id: 4,
     title: "Design Specialist",
     name: "Thankgod Ekene",
     image: picd,
-    position: "More-Links Concept",
+    media: teamFacebook,
   },
 ];
 const teamMembers = team.filter((person) => person.id != 1);
@@ -63,10 +64,13 @@ export default function AboutUs() {
         </div>
       </div>
       <div className="moreAbout">
+        <h1>
+          <b>Meet the team</b>
+        </h1>
         <div className="aboutStory">
           <section>
             <h2>Our Story</h2>
-            <p>
+            <p className="ourstory">
               Our journey began with a shared passion for creativity and a
               dedication to excellence. What started as a small endeavor fueled
               by big dreams has blossomed into a trusted name in event
@@ -78,19 +82,21 @@ export default function AboutUs() {
           <div className="imageSection">
             <img src={pica} alt="" className="aboutPic" />
             <p>
-              <br /> <b>{team[0].title}</b>
+              <b>{team[0].title}</b>
               {team[0].name}
-              <b> {team[0].position}</b>
+              <br />
+              {team[0].media}
             </p>
           </div>
         </div>
-        <div className="teamMembers ">
-          {teamMembers.map((member) => (
-            <div className="imageSection teamMem">
+        <div className="teamMembers">
+          {teamMembers.map((member, idx) => (
+            <div key={idx} className="imageSection teamMem">
               <img src={member.image} alt="" className="aboutPic teampic" />
               <p>
                 <br /> <b>{member.title}</b>
                 {member.name}
+                <br /> <b>{member.media}</b>
               </p>
             </div>
           ))}

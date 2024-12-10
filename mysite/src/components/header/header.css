@@ -26,7 +26,6 @@ header {
   background-color: #094755;
 }
 
-
 .headerLinks {
   display: flex;
   list-style: none;
@@ -103,5 +102,8 @@ header {
 @media (max-width: 800px) {
   .reduceLink {
     padding: 20px;
+  }
+  .nav-bar {
+    font-size: 1em;
   }
 }
