@@ -11,8 +11,7 @@
   background-size: cover;
   height: 500px;
 }
-.serviceMain{
-  
+.serviceMain {
 }
 .serviceMainPara {
   max-height: 350px;
@@ -73,6 +72,12 @@
   height: 350px;
   border-radius: 20px;
   object-fit: cover;
+}
+.genImage {
+  background-color: #afafaf;
+}
+.genImage video {
+  max-width: 350px;
 }
 @media (max-width: 400px) {
   .services {

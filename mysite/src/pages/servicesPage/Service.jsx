@@ -9,14 +9,15 @@ import Birthdays from "./Birthdays";
 import Corporate from "./Corporate";
 import { Link, useNavigate } from "react-router-dom";
 import ScrollToTop from "../../components/ScrollToTop";
+import Videos from "./Videos";
 
 const services = [
-  { id: 1, comp: <Reception />, name: "Receptions", controls: "collapseOne" },
+  { id: 1, comp: <Reception />, name: "Receptions", controls: "collapseOne1" },
   {
     id: 2,
     comp: <Traditional />,
     name: "Traditional Wedding Styles",
-    controls: "collapseTwo",
+    controls: "collapseTwo2",
   },
 ];
 
@@ -73,32 +74,54 @@ export default function Service() {
 
       <div id="more_on_ervices">
         <div class="accordion" id="accordionExample">
-          {services.map((service, idx) => (
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target={"#" + service.controls}
-                  aria-expanded={idx == 0 ? "true" : "false"}
-                  aria-controls={service.controls}
-                  onClick={() => window.scrollTo(0, 700)}
-                >
-                  {service.name}
-                </button>
-              </h2>
-              <div
-                id={service.controls}
-                class="accordion-collapse collapse show"
-                data-bs-parent="#accordionExample"
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+                onClick={() => window.scrollTo(0, 700)}
               >
-                <div class="accordion-body">{service.comp}</div>
+                Receptions
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <Reception />
               </div>
-              {console.log("#" + service.controls)}
             </div>
-          ))}
-
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+                onClick={() => window.scrollTo(0, 700)}
+              >
+                Traditional Wedding Styles
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <Traditional />
+              </div>
+            </div>
+          </div>
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button
@@ -195,8 +218,61 @@ export default function Service() {
               </div>
             </div>
           </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse7"
+                aria-expanded="false"
+                aria-controls="collapse7"
+                onClick={() => window.scrollTo(0, 700)}
+              >
+                Live Videos
+              </button>
+            </h2>
+            <div
+              id="collapse7"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <Videos />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
+}
+
+{
+  /* {services.map((service, idx) => (
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target={"#" + service.controls}
+                  aria-expanded={idx == 0 ? "true" : "false"}
+                  aria-controls={service.controls}
+                  onClick={() => window.scrollTo(0, 700)}
+                >
+                  {service.name}
+                </button>
+              </h2>
+              <div
+                id={service.controls}
+                class={
+                  "accordion-collapse collapse "
+                }
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">{service.comp}</div>
+              </div>
+            </div>
+          ))} */
 }

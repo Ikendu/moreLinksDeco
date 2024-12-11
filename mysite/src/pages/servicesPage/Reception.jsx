@@ -9,7 +9,7 @@ import image24 from "../../assets/images/image24.jpg";
 import image4 from "../../assets/images/image4.jpeg";
 import image40 from "../../assets/images/image40.jpg";
 import image41 from "../../assets/images/image41.jpg";
-Getter;
+
 export default function Reception() {
   return (
     <div>
