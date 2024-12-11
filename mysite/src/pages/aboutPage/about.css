@@ -44,6 +44,8 @@
   font-size: 50px;
   text-align: left;
   font-family: "Montserrat Alternates", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  color: #38d3fd;
 }
 .aboutMain p {
   width: max(57%, 380px);
@@ -269,7 +271,7 @@
   .aboutMain p {
     width: max(68%, 380px);
     background-color: #1312128f;
-    padding: 20px;
+    padding: 0 10px;
   }
   .moreChoose {
     flex-wrap: wrap;

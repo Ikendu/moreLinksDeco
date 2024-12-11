@@ -11,8 +11,24 @@
   background-size: cover;
   height: 500px;
 }
-.serviceMainPara p {
+.serviceMain{
+  
+}
+.serviceMainPara {
+  max-height: 350px;
+  overflow: auto;
+}
+.serviceMainPara p::first-letter {
   font-weight: 900;
+  color: #38d3fd;
+  font-size: 1.3em;
+}
+.serviceMainPara p {
+  font-size: 16px !important;
+  margin-bottom: 2px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid;
 }
 .serviceButton {
   padding: 20px 30px;

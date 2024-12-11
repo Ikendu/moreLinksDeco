@@ -10,6 +10,16 @@ import Corporate from "./Corporate";
 import { Link, useNavigate } from "react-router-dom";
 import ScrollToTop from "../../components/ScrollToTop";
 
+const services = [
+  { id: 1, comp: <Reception />, name: "Receptions", controls: "collapseOne" },
+  {
+    id: 2,
+    comp: <Traditional />,
+    name: "Traditional Wedding Styles",
+    controls: "collapseTwo",
+  },
+];
+
 export default function Service() {
   const navigate = useNavigate();
   return (
@@ -22,28 +32,34 @@ export default function Service() {
           <div onClick={() => navigate(-1)}>
             <i class="fa-solid fa-arrow-left fa-beat-fade iconStyle"></i>
           </div>
-          <h2 className="serviceHead">Our Service</h2>
-          <p className="serviceMainPara">
-            Wedding Décor:
+          <h2 className="serviceHead">Our Services</h2>
+          <div className="serviceMainPara">
+            <p>
+              Wedding Décor: <br /> Elegant ceremonies and receptions that
+              capture your love story.
+            </p>
+            <p>
+              Corporate Events:
+              <br />
+              Professional setups that impress clients and colleagues.
+            </p>
+            <p>
+              Birthday & Private Parties:
+              <br />
+              Fun, vibrant, and memorable decorations for all ages.
+            </p>
+
+            <p>
+              Themed Events:
+              <br />
+              Creative concepts brought to life with precision and flair. Let us
+              handle the details while you enjoy the celebration!
+            </p>
             <br />
-            Elegant ceremonies and receptions that capture your love story.
-            <br />
-            Corporate Events:
-            <br />
-            Professional setups that impress clients and colleagues.
-            <br />
-            Birthday & Private Parties:
-            <br />
-            Fun, vibrant, and memorable decorations for all ages.
-            <br />
-            Themed Events:
-            <br />
-            Creative concepts brought to life with precision and flair. Let us
-            handle the details while you enjoy the celebration!
-          </p>
-          <a href="#more_on_ervices">
+          </div>
+          {/* <a href="#more_on_ervices">
             <button className="serviceButton">See More</button>
-          </a>
+          </a> */}
         </div>
       </div>
       <Link
@@ -57,54 +73,32 @@ export default function Service() {
 
       <div id="more_on_ervices">
         <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-                onClick={() => window.scrollTo(0, 700)}
+          {services.map((service, idx) => (
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target={"#" + service.controls}
+                  aria-expanded={idx == 0 ? "true" : "false"}
+                  aria-controls={service.controls}
+                  onClick={() => window.scrollTo(0, 700)}
+                >
+                  {service.name}
+                </button>
+              </h2>
+              <div
+                id={service.controls}
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
               >
-                Traditional Wedding Styles
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <Traditional />
+                <div class="accordion-body">{service.comp}</div>
               </div>
+              {console.log("#" + service.controls)}
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-                onClick={() => window.scrollTo(0, 700)}
-              >
-                Receptions
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <Reception />
-              </div>
-            </div>
-          </div>
+          ))}
+
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button
