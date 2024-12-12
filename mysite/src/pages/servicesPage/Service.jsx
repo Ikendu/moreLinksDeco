@@ -29,33 +29,21 @@ export default function Service() {
       {/* This is being styled in about-us folder, just few style will come from service folder */}
       <div className="serviceFront">
         <div className="aboutOverlay"></div>
-        <div className="aboutMain">
-          <div onClick={() => navigate(-1)}>
-            <i class="fa-solid fa-arrow-left fa-beat-fade iconStyle"></i>
+        <div className="serviceMain">
+          <div className="iconStyle" onClick={() => navigate(-1)}>
+            <i class="fa-solid fa-arrow-left fa-beat-fade "></i>
           </div>
           <h2 className="serviceHead">Our Services</h2>
           <div className="serviceMainPara">
-            <p>
-              Wedding Décor: <br /> Elegant ceremonies and receptions that
-              capture your love story.
-            </p>
-            <p>
-              Corporate Events:
-              <br />
-              Professional setups that impress clients and colleagues.
-            </p>
-            <p>
-              Birthday & Private Parties:
-              <br />
-              Fun, vibrant, and memorable decorations for all ages.
-            </p>
-
-            <p>
-              Themed Events:
-              <br />
+            <p>Wedding Décor</p>
+            <p>Corporate Events</p>
+            <p>Birthday & Private Parties</p>
+            <p>Themed Events</p>
+            <p>Other Events</p>
+            <div>
               Creative concepts brought to life with precision and flair. Let us
               handle the details while you enjoy the celebration!
-            </p>
+            </div>
             <br />
           </div>
           {/* <a href="#more_on_ervices">

@@ -12,7 +12,8 @@
   height: 500px;
 }
 .iconStyle {
-  top: 20px;
+  position: absolute;
+  top: 10px;
   left: 10px;
 }
 .aboutContainer h2 {
@@ -27,7 +28,6 @@
   padding: 2px;
   width: 100%;
   height: 500px;
-
   background: repeating-linear-gradient(
     130deg,
     #42022d,

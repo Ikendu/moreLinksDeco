@@ -11,10 +11,36 @@
   background-size: cover;
   height: 500px;
 }
+.iconStyle {
+  margin-bottom: 20px;
+}
+.aboutOverlay {
+  position: absolute;
+  padding: 2px;
+  width: 97%;
+  height: 500px;
+  background: repeating-linear-gradient(
+    130deg,
+    #42022d,
+    #44022f88 55%,
+    #f5f3f340 55% 100%
+  );
+}
 .serviceMain {
+  display: inline-block;
+  position: absolute;
+  padding: 30px 50px;
+}
+.serviceMain h2 {
+  font-size: 50px;
+  text-align: left;
+  font-family: "Montserrat Alternates", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  color: #38d3fd;
 }
 .serviceMainPara {
-  max-height: 350px;
+  max-height: 320px;
+  max-width: 500px;
   overflow: auto;
 }
 .serviceMainPara p::first-letter {
@@ -27,7 +53,6 @@
   margin-bottom: 2px;
   word-spacing: 5px;
   letter-spacing: 1px;
-  border-bottom: 1px solid;
 }
 .serviceButton {
   padding: 20px 30px;
@@ -74,12 +99,25 @@
   object-fit: cover;
 }
 .genImage {
-  background-color: #afafaf;
+  /* background-color: #afafaf; */
 }
 .genImage video {
   max-width: 350px;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .serviceMain {
+    padding: 30px;
+  }
 }
 @media (max-width: 400px) {
+  .serviceMain {
+    padding: 20px;
+  }
+
+  .accordion {
+    width: 100% !important;
+  }
   .services {
     padding: 50px 5px;
     /* margin-top: 50px; */
@@ -99,5 +137,8 @@
     height: 300px;
     border-radius: 20px;
     object-fit: cover;
+  }
+  .genImage video {
+    width: 98%;
   }
 }
