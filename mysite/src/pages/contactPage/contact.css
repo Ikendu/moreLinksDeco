@@ -124,9 +124,7 @@ textarea,
     padding: 50px 20px;
   }
   .contactMain p {
-    width: 450px;
-    background-color: #1312128f;
-    padding: 10px;
+    max-width: 450px;
   }
   .contactSection {
     margin: 10px;
@@ -143,8 +141,28 @@ textarea,
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .contactMain p {
+    font-size: 16px;
+    max-width: 380px;
+  }
+}
 @media (max-width: 420px) {
   .contactHead {
     font-size: 30px !important;
+  }
+  .contactMain p {
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 300px;
+    max-height: 300px;
+    overflow: auto;
+  }
+  .contactMain {
+    padding: 50px 10px;
+  }
+  .fullDetails {
+    margin: 5px;
+    font-size: 16px;
   }
 }
