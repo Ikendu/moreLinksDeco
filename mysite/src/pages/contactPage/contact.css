@@ -124,7 +124,7 @@ textarea,
     padding: 50px 20px;
   }
   .contactMain p {
-    max-width: 450px;
+    max-width: 420px;
   }
   .contactSection {
     margin: 10px;
@@ -147,7 +147,7 @@ textarea,
     max-width: 380px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 460px) {
   .contactHead {
     font-size: 30px !important;
   }
@@ -164,5 +164,10 @@ textarea,
   .fullDetails {
     margin: 5px;
     font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .contactMain p {
+    max-width: 280px;
   }
 }
