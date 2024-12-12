@@ -12,14 +12,10 @@
   height: 500px;
 }
 .iconStyle {
-  position: absolute;
   top: 10px;
   left: 10px;
 }
-.aboutContainer h2 {
-  text-align: center;
-  font-size: 40px;
-}
+
 .aboutContainer h2:hover {
   text-decoration: underline;
 }

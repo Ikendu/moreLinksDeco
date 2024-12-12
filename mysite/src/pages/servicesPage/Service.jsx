@@ -28,7 +28,7 @@ export default function Service() {
       <ScrollToTop />
       {/* This is being styled in about-us folder, just few style will come from service folder */}
       <div className="serviceFront">
-        <div className="aboutOverlay"></div>
+        <div className="serviceOverlay"></div>
         <div className="serviceMain">
           <div className="iconStyle" onClick={() => navigate(-1)}>
             <i class="fa-solid fa-arrow-left fa-beat-fade "></i>
@@ -40,7 +40,7 @@ export default function Service() {
             <p>Birthday & Private Parties</p>
             <p>Themed Events</p>
             <p>Other Events</p>
-            <div>
+            <div className="frontDetails">
               Creative concepts brought to life with precision and flair. Let us
               handle the details while you enjoy the celebration!
             </div>

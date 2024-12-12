@@ -1,5 +1,6 @@
 .contactUs {
-  padding: 50px 0;
+  padding: 50px 0px;
+  position: relative;
 }
 .contactFront {
   background-image: url("../../assets/images/contactCover1.jpg");
@@ -8,6 +9,33 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
+}
+.iconStyle {
+  top: 10px;
+  left: 10px;
+}
+/* .contactHead{
+  text-align: center;
+  font-size: 40px;
+} */
+
+.contactMain {
+  display: inline-block;
+  position: absolute;
+  padding: 70px 50px;
+}
+.contactMain h2 {
+  font-size: 50px;
+  text-align: left;
+  font-family: "Montserrat Alternates", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  color: #38d3fd;
+}
+.contactMain p {
+  width: max(56%, 380px);
+  line-height: 35px;
+  font-size: 20px;
+  text-shadow: 2px 0px #131212;
 }
 
 .contactOverlay {
@@ -46,7 +74,8 @@ form {
   flex-direction: column;
 }
 .form input,
-textarea, .btnSend {
+textarea,
+.btnSend {
   width: 100%;
   display: block;
   padding: 10px;
@@ -64,6 +93,23 @@ textarea, .btnSend {
   color: #d7d4d4;
   font-size: 20px;
 }
+
+@media (max-width: 1000px) {
+  .aboutOverlay {
+    background: repeating-linear-gradient(
+      130deg,
+      #42022d,
+      #44022f88 65%,
+      #f5f3f300 55% 100%
+    );
+  }
+  .contactMain p {
+    width: max(68%, 500px);
+    background-color: #1312128f;
+    padding: 10px;
+  }
+}
+
 @media (max-width: 900px) {
   .contactSection {
     display: flex;
@@ -74,6 +120,14 @@ textarea, .btnSend {
   }
 }
 @media (max-width: 600px) {
+  .contactMain {
+    padding: 50px 20px;
+  }
+  .contactMain p {
+    width: 450px;
+    background-color: #1312128f;
+    padding: 10px;
+  }
   .contactSection {
     margin: 10px;
   }

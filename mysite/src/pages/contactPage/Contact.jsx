@@ -54,94 +54,92 @@ export default function Contact() {
   return (
     <div className="contactUs">
       <ScrollToTop />
-      <div>
-        <div className="contactFront">
-          <div className="contactOverlay"></div>
+      <div className="contactFront">
+        <div className="contactOverlay"></div>
 
-          <div className="aboutMain">
-            <div onClick={() => navigate(-1)}>
-              <i class="fa-solid fa-arrow-left fa-beat-fade iconStyle"></i>
-            </div>
-            <h2 className="contactHead">Contact Us Today</h2>
-            <p>
-              At More-Links Deco, we believe every event deserves a touch of
-              magic. Whether you're planning a wedding, corporate event,
-              birthday party, or any special occasion, we're here to bring your
-              vision to life.
-              <hr /> Feel free to reach out using any of the methods below—we're
-              excited to hear from you!
-            </p>
+        <div className="contactMain">
+          <div onClick={() => navigate(-1)}>
+            <i class="fa-solid fa-arrow-left fa-beat-fade iconStyle"></i>
+          </div>
+          <h2 className="contactHead">Contact Us Today</h2>
+          <p>
+            At More-Links Deco, we believe every event deserves a touch of
+            magic. Whether you're planning a wedding, corporate event, birthday
+            party, or any special occasion, we're here to bring your vision to
+            life.
+            <hr /> Feel free to reach out using any of the methods below—we're
+            excited to hear from you!
+          </p>
+        </div>
+      </div>
+
+      <div className="contactSection">
+        <div className="contactDetails">
+          <h3>Get in Touch</h3>
+          <div className="fullDetails">
+            <p>📞 Phone: +2348061632276</p>
+            <p>📧 Email: services@moredeco.com</p>
+            <p>📍 Location: 30 Adelabor Street Uwani, Enugu, Nigeria</p>
           </div>
         </div>
-
-        <div className="contactSection">
-          <div className="contactDetails">
-            <h3>Get in Touch</h3>
-            <div className="fullDetails">
-              <p>📞 Phone: +2348061632276</p>
-              <p>📧 Email: services@moredeco.com</p>
-              <p>📍 Location: 30 Adelabor Street Uwani, Enugu, Nigeria</p>
+        <div className="form">
+          <form onSubmit={handleSubmit}>
+            <h3>Tell us what is on your mind</h3>
+            <div>
+              <label htmlFor="name">Name:</label>
+              <input
+                required
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Your fullname"
+              />
             </div>
-          </div>
-          <div className="form">
-            <form onSubmit={handleSubmit}>
-              <h3>Tell us what is on your mind</h3>
-              <div>
-                <label htmlFor="name">Name:</label>
-                <input
-                  required
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  placeholder="Your fullname"
-                />
-              </div>
-              <div>
-                <label htmlFor="email">Email:</label>
-                <input
-                  required
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  id="email"
-                  onChange={handleChange}
-                  placeholder="Active email"
-                />
-              </div>
-              <div>
-                <label htmlFor="phone">Phone Number: </label>
-                <input
-                  required
-                  type="text"
-                  name="phone"
-                  value={formData.phone}
-                  id="phone"
-                  onChange={handleChange}
-                  placeholder="Active phone number"
-                />
-              </div>
-              <div>
-                <label htmlFor="message">Message for us </label>
-                <textarea
-                  required
-                  name="message"
-                  id="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                ></textarea>
-              </div>
-              <button className="btnSend">
-                {loading ? (
-                  <i class="fa-solid fa-spinner fa-spin-pulse"></i>
-                ) : (
-                  "Submit"
-                )}
-              </button>
-              {status && <p>{status}</p>}
-            </form>
-          </div>
+            <div>
+              <label htmlFor="email">Email:</label>
+              <input
+                required
+                type="email"
+                name="email"
+                value={formData.email}
+                id="email"
+                onChange={handleChange}
+                placeholder="Active email"
+              />
+            </div>
+            <div>
+              <label htmlFor="phone">Phone Number: </label>
+              <input
+                required
+                type="text"
+                name="phone"
+                value={formData.phone}
+                id="phone"
+                onChange={handleChange}
+                placeholder="Active phone number"
+              />
+            </div>
+            <div>
+              <label htmlFor="message">Message for us </label>
+              <textarea
+                required
+                name="message"
+                id="message"
+                value={formData.message}
+                onChange={handleChange}
+              ></textarea>
+            </div>
+            <button className="btnSend">
+              {loading ? (
+                <i class="fa-solid fa-spinner fa-spin-pulse"></i>
+              ) : (
+                "Submit"
+              )}
+            </button>
+            {status && <p>{status}</p>}
+          </form>
         </div>
       </div>
     </div>
