@@ -1,40 +1,40 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function FrontServices() {
   return (
-    <div className="service">
-      <div className="overlay2">
-        <div className="serviceCover">
-          <h2 className="serviceHeader">What we do</h2>
-          <div className="servicePara">
+    <div className='service'>
+      <div className='overlay2'>
+        <div className='serviceCover'>
+          <h2 className='serviceHeader'>What we do</h2>
+          <div className='servicePara'>
             <p>
-              ✨ Weddings & Engagements: Romantic, breathtaking designs that
-              make your big day unforgettable.
+              ✨ Weddings & Engagements: Romantic, breathtaking designs that make your big day
+              unforgettable.
             </p>
             <p>
-              🎉 Corporate Events: Professional, polished setups for launches,
-              awards nights, and conferences.
+              🎉 Corporate Events: Professional, polished setups for launches, awards nights, and
+              conferences.
             </p>
             <p>
-              🎈 Private Parties: Birthdays, anniversaries, and everything in
-              between—celebrate in style.
+              🎈 Private Parties: Birthdays, anniversaries, and everything in between—celebrate in
+              style.
             </p>
           </div>
         </div>
         <Link
-          className="whatsappChat"
+          className='whatsappChat'
           to={
-            "https://wa.me/2348061632276?text=Hello%20there!%20I%20want%20to%20discuss%20with%20you."
+            'https://wa.me/2348061632276?text=Hello%20there!%20I%20want%20to%20discuss%20with%20you.'
           }
-          target="_blank"
+          target='_blank'
         >
-          <div className="innerWhatsapp">
-            <i class="fa-brands fa-whatsapp "></i>
+          <div className='innerWhatsapp'>
+            <i className='fa-brands fa-whatsapp fa-fade'></i>
             Now tell us how you want it
           </div>
         </Link>
       </div>
     </div>
-  );
+  )
 }

@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #e2dce2;
-  font-family: Quicksand, Georgia, Times, "Times New Roman", serif;
+  font-family: Quicksand, Georgia, Times, 'Times New Roman', serif;
   overflow-x: hidden;
   /* transition: 2s; */
 }
@@ -45,9 +45,12 @@ body {
   margin-left: 8px;
   z-index: 102;
 }
+.whatsapp:hover {
+  background-color: #044a07;
+}
 
 .landingContent {
-  font-family: "Quicksand";
+  font-family: 'Quicksand';
   position: relative;
   top: 90px;
   margin: auto;
@@ -62,7 +65,7 @@ body {
 }
 
 .landingContent h1 {
-  font-family: "Montserrat Alternates", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Montserrat Alternates', 'Arial Narrow', Arial, sans-serif;
   font-size: 2.5em;
   word-spacing: 10px;
   line-height: 1.8em;
@@ -100,9 +103,8 @@ body {
 }
 .heroButton:hover,
 .innerWhatsapp:hover {
-  background-color: #43ec49;
+  background-color: #0d550f;
   font-weight: 800;
-  color: #41073f;
 }
 .heroButton:active,
 .innerWhatsapp:active {
