@@ -38,22 +38,22 @@ export default function Footer() {
               <h2>✨&nbsp;Services&nbsp;&&nbsp;Solutions</h2>
               <ul className='serviceList'>
                 <li>
-                  <Link to='/gallery'>🎈 Event Styling</Link>
+                  <Link to='/services'>🎈 Event Styling</Link>
                 </li>
                 <li>
-                  <a href='/gallery'>💐 Floral Arrangements</a>
+                  <a href='/services'>💐 Floral Arrangements</a>
                 </li>
                 <li>
-                  <Link to='/gallery'>🎀 Custom Decor </Link>
+                  <Link to='/services'>🎀 Custom Decor </Link>
                 </li>
                 <li>
-                  <Link to='/gallery'>🚨 Lighting & Ambience</Link>
+                  <Link to='/services'>🚨 Lighting & Ambience</Link>
                 </li>
                 <li>
-                  <Link to='/gallery'>📸 Instagram-Worthy Setups</Link>
+                  <Link to='/services'>📸 Instagram-Worthy Setups</Link>
                 </li>
                 <li>
-                  <Link to='/gallery'>🌺 Explore Our Gallary 🌺</Link>
+                  <Link to='/services'>🌺 Explore Our Gallary 🌺</Link>
                 </li>
               </ul>
             </div>
@@ -78,7 +78,7 @@ export default function Footer() {
                   <Link to='/blogpost'>Event planning trends</Link>
                 </li>
                 <li>
-                  <Link to='/gallery'>Our Gallary</Link>
+                  <Link to='/services'>Our Gallary</Link>
                 </li>
               </ul>
             </div>
