@@ -3,7 +3,7 @@
   position: relative;
 }
 .contactFront {
-  background-image: url("../../assets/images/contactCover1.jpg");
+  background-image: url('../../assets/images/contactCover1.jpg');
   background-attachment: fixed;
   color: #e0dddd;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
 .contactMain h2 {
   font-size: 50px;
   text-align: left;
-  font-family: "Montserrat Alternates", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Montserrat Alternates', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
   color: #38d3fd;
 }
@@ -35,7 +35,7 @@
   width: max(56%, 380px);
   line-height: 35px;
   font-size: 20px;
-  text-shadow: 2px 0px #131212;
+  text-shadow: 2px 0px #131213;
 }
 
 .contactOverlay {
@@ -43,12 +43,7 @@
   padding: 2px;
   width: 100%;
   height: 500px;
-  background: repeating-linear-gradient(
-    130deg,
-    #42022d,
-    #44022f88 55%,
-    #f5f3f34b 55% 100%
-  );
+  background: repeating-linear-gradient(130deg, #42022d, #44022f88 55%, #f5f3f34b 55% 100%);
 }
 .contactSection {
   display: flex;
@@ -96,16 +91,11 @@ textarea,
 
 @media (max-width: 1000px) {
   .aboutOverlay {
-    background: repeating-linear-gradient(
-      130deg,
-      #42022d,
-      #44022f88 65%,
-      #f5f3f300 55% 100%
-    );
+    background: repeating-linear-gradient(130deg, #42022d, #44022f88 65%, #f5f3f300 55% 100%);
   }
   .contactMain p {
     width: max(68%, 500px);
-    background-color: #1312128f;
+    background-color: #3d0939d2;
     padding: 10px;
   }
 }
