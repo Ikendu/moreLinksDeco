@@ -4,7 +4,7 @@
   background-color: #e2dce2;
 }
 .serviceFront {
-  background-image: url("../../assets/images/image25.jpg");
+  background-image: url('../../assets/images/image25.jpg');
   background-attachment: fixed;
   color: #e0dddd;
   background-repeat: no-repeat;
@@ -19,12 +19,7 @@
   padding: 2px;
   width: 97%;
   height: 500px;
-  background: repeating-linear-gradient(
-    130deg,
-    #42022d,
-    #44022f88 55%,
-    #f5f3f340 55% 100%
-  );
+  background: repeating-linear-gradient(130deg, #42022d, #44022f88 55%, #f5f3f340 55% 100%);
 }
 .serviceMain {
   display: inline-block;
@@ -34,7 +29,7 @@
 .serviceMain h2 {
   font-size: 50px;
   text-align: left;
-  font-family: "Montserrat Alternates", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Montserrat Alternates', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
   color: #38d3fd;
 }
@@ -45,6 +40,9 @@
 }
 .frontDetails {
   margin-top: 20px;
+}
+.frontDetails a {
+  color: #f5f3f3;
 }
 .serviceMainPara p::first-letter {
   font-weight: 900;

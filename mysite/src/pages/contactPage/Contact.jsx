@@ -56,7 +56,7 @@ export default function Contact() {
 
         <div className='contactMain'>
           <div onClick={() => navigate(-1)}>
-            <i class='fa-solid fa-arrow-left fa-beat-fade iconStyle'></i>
+            <i className='fa-solid fa-arrow-left fa-beat-fade iconStyle'></i>
           </div>
           <h2 className='contactHead'>Contact Us Today</h2>
           <p>
@@ -73,8 +73,8 @@ export default function Contact() {
         <div className='contactDetails'>
           <h3>Get in Touch</h3>
           <div className='fullDetails'>
-            <p>📞 Phone: 08070958827</p>
-            <p>💬 Phone: 08061632276 </p>
+            <p>📞 Phone: 0814 096 0034</p>
+            <p>💬 Phone: 0806 163 2276 </p>
             <p>📧 Email: services@moredeco.com</p>
             <p>📍 Location: 30 Adelabor Street Uwani, Enugu, Nigeria</p>
           </div>
@@ -129,7 +129,7 @@ export default function Contact() {
               ></textarea>
             </div>
             <button className='btnSend'>
-              {loading ? <i class='fa-solid fa-spinner fa-spin-pulse'></i> : 'Submit'}
+              {loading ? <i className='fa-solid fa-spinner fa-spin-pulse'></i> : 'Submit'}
             </button>
             {status && <p>{status}</p>}
           </form>

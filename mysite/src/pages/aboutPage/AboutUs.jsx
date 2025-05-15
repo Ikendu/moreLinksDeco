@@ -6,7 +6,7 @@ import pica from '../../assets/images/pica.png'
 import picb from '../../assets/images/picb.png'
 import picc from '../../assets/images/picc.png'
 import picd from '../../assets/images/picd1.png'
-const teamFacebook = <i class='fa-brands fa-facebook'></i>
+const teamFacebook = <i className='fa-brands fa-facebook'></i>
 const team = [
   {
     id: 1,
@@ -50,7 +50,7 @@ export default function AboutUs() {
         <div className='aboutOverlay'></div>
         <div className='aboutMain'>
           <div onClick={() => navigate(-1)}>
-            <i class='fa-solid fa-arrow-left fa-beat-fade iconStyle'></i>
+            <i className='fa-solid fa-arrow-left fa-beat-fade iconStyle'></i>
           </div>
           <h2>About Us</h2>
           <p>
@@ -58,7 +58,8 @@ export default function AboutUs() {
             With over 6 years of experience in the event decoration industry, our team has mastered
             the art of curating memorable events tailored to your unique vision. From elegant
             weddings and corporate galas to intimate celebrations, we pride ourselves on creating
-            atmospheres that inspire and captivate.
+            atmospheres that inspire and captivate. <br />
+            Call us now <a href='tel:0814 096 0034'>0814 096 0034</a>
           </p>
         </div>
       </div>
@@ -133,17 +134,17 @@ export default function AboutUs() {
             <h2>Why Choose Us?</h2>
             <div className='moreChoose'>
               <section>
-                <i class='fa-solid fa-street-view chooseUsIcon'></i>
+                <i className='fa-solid fa-street-view chooseUsIcon'></i>
                 <h4>Proven Track Record</h4>
                 <p>Over 6 years of delivering exceptional event décor</p> .
               </section>
               <section>
-                <i class='fa-solid fa-list-check chooseUsIcon'></i>
+                <i className='fa-solid fa-list-check chooseUsIcon'></i>
                 <h4>Tailored Solutions</h4>
                 <p>Every detail is customized to match your preferences and theme.</p>
               </section>
               <section>
-                <i class='fa-solid fa-wand-magic-sparkles chooseUsIcon'></i>
+                <i className='fa-solid fa-wand-magic-sparkles chooseUsIcon'></i>
                 <h4>Passion for Perfection</h4>
                 <p>We treat every event as if it’s our own, ensuring flawless execution.</p>
               </section>

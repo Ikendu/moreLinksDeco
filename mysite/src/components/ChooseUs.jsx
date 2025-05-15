@@ -28,7 +28,7 @@ export default function ChooseUs() {
             >
               whatsapp
             </Link>{' '}
-            or call us at <a href='tel:08140960034'>08140960034</a>
+            or call us at <a href='tel:08140960034'>0814 096 0034</a>
           </p>
         </div>
         <div className='imageDetails'>

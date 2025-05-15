@@ -42,7 +42,8 @@ export default function Service() {
             <p>Other Events</p>
             <div className='frontDetails'>
               Creative concepts brought to life with precision and flair. Let us handle the details
-              while you enjoy the celebration!
+              while you enjoy the celebration! <br />
+              Call us now <a href='tel:08140960034'>0814 096 0034</a>
             </div>
             <br />
           </div>
