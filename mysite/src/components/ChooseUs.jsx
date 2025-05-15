@@ -7,9 +7,10 @@ import image5 from '../assets/images/image5.jpeg'
 import image13 from '../assets/images/image13.jpg'
 import logoImage from '../assets/images/logoImage.png'
 import Getter from '../assets/images/getter'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function ChooseUs() {
+  const navigate = useNavigate()
   return (
     <div className='fullPage'>
       <div className='chooseUs'>
@@ -39,7 +40,15 @@ export default function ChooseUs() {
               craft unique designs that speak to your personality and purpose.
             </p>
           </div>
-          <img src={image1} alt='' className='serviceIage' />
+
+          <img
+            src={image1}
+            alt=''
+            className='serviceIage'
+            onClick={() => {
+              navigate('/services')
+            }}
+          />
         </div>
 
         <div className='imageDetails2'>
@@ -73,6 +82,7 @@ export default function ChooseUs() {
               settings.
             </p>
           </div>
+
           <img src={image4} alt='' className='serviceIage' />
         </div>
         <div className='imageDetails'>
