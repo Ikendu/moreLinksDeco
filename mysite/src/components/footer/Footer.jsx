@@ -18,7 +18,7 @@ export default function Footer() {
               <h2>Let’s Stay Connected</h2>
               <div className='contact'>
                 <i className='fa-solid fa-phone'></i>
-                <p>0807 095 8827</p>
+                <p>0814 096 0034</p>
               </div>
               <div className='contact'>
                 <i className='fa-solid fa-phone'></i>
@@ -31,7 +31,7 @@ export default function Footer() {
               </div>
               <div className='contact'>
                 <i className='fa-solid fa-location-dot'></i>
-                <p>30 Adelabor Street Uwani Enugu</p>
+                <p>30 Adelabor Street, Uwani, Enugu</p>
               </div>
             </div>
             <div>

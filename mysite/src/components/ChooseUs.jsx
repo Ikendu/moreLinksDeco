@@ -46,7 +46,7 @@ export default function ChooseUs() {
             alt=''
             className='serviceIage'
             onClick={() => {
-              navigate('/services')
+              navigate('/services#items')
             }}
           />
         </div>
@@ -60,7 +60,14 @@ export default function ChooseUs() {
               ambiance that wows your guests.
             </p>
           </div>
-          <img src={image2} alt='' className='serviceIage' />
+          <img
+            src={image2}
+            alt=''
+            className='serviceIage'
+            onClick={() => {
+              navigate('/services#items')
+            }}
+          />
         </div>
         <div className='imageDetails'>
           <div className='pageContent'>
@@ -71,7 +78,14 @@ export default function ChooseUs() {
               settings.
             </p>
           </div>
-          <img src={image125} alt='' className='serviceIage' />
+          <img
+            src={image125}
+            alt=''
+            className='serviceIage'
+            onClick={() => {
+              navigate('/services#items')
+            }}
+          />
         </div>
         <div className='imageDetails2'>
           <div className='pageContent'>
@@ -83,7 +97,14 @@ export default function ChooseUs() {
             </p>
           </div>
 
-          <img src={image4} alt='' className='serviceIage' />
+          <img
+            src={image4}
+            alt=''
+            className='serviceIage'
+            onClick={() => {
+              navigate('/services#items')
+            }}
+          />
         </div>
         <div className='imageDetails'>
           <div className='pageContent'>
@@ -93,7 +114,14 @@ export default function ChooseUs() {
               celebration, we’ll bring your unique vision to life.
             </p>
           </div>
-          <img src={image5} alt='' className='serviceIage' />
+          <img
+            src={image5}
+            alt=''
+            className='serviceIage'
+            onClick={() => {
+              navigate('/services#items')
+            }}
+          />
         </div>
         <div className='imageDetails2'>
           <div className='pageContent'>
@@ -104,7 +132,14 @@ export default function ChooseUs() {
               stunning event décor tailored to your style and theme.
             </p>
           </div>
-          <img src={image13} alt='' className='serviceIage' />
+          <img
+            src={image13}
+            alt=''
+            className='serviceIage'
+            onClick={() => {
+              navigate('/services#items')
+            }}
+          />
         </div>
       </div>
     </div>
