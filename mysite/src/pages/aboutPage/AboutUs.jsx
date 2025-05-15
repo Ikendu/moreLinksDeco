@@ -20,7 +20,7 @@ const team = [
     title: 'Manager',
     name: 'Thankgod Ekene',
     image: picd,
-    media: teamFacebook,
+    media: '08140960034',
   },
   {
     id: 3,
@@ -94,7 +94,7 @@ export default function AboutUs() {
               <p>
                 <br /> <b>{member.title}</b>
                 {member.name}
-                <br /> <b>{member.media}</b>
+                <br /> {member.media}
               </p>
             </div>
           ))}
