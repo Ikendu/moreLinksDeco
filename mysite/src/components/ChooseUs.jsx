@@ -7,6 +7,7 @@ import image5 from '../assets/images/image5.jpeg'
 import image13 from '../assets/images/image13.jpg'
 import logoImage from '../assets/images/logoImage.png'
 import Getter from '../assets/images/getter'
+import { Link } from 'react-router-dom'
 
 export default function ChooseUs() {
   return (
@@ -17,8 +18,16 @@ export default function ChooseUs() {
           <p>
             Your event isn’t just a gathering—it’s a story waiting to be told. From intimate
             celebrations to grand occasions, we bring your dreams to life with stunning event
-            decoration, tailored to your style and theme. Reach out to our team now, on whatsapp or
-            call us at <a href='tel:08140960034'>08140960034</a> or{' '}
+            decoration, tailored to your style and theme. Reach out to our team now on{' '}
+            <Link
+              to={
+                'https://wa.me/2348140960034?text=Hello%20there!%20I%20want%20to%20discuss%20an%20upcoming%20event%20with%20you.'
+              }
+              target='_blank'
+            >
+              whatsapp
+            </Link>{' '}
+            or call us at <a href='tel:08140960034'>08140960034</a>
           </p>
         </div>
         <div className='imageDetails'>

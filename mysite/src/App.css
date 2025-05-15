@@ -119,13 +119,19 @@ body {
 }
 .moreParagraph p {
   max-width: 600px;
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 35px;
   /* border: 5px solid #; */
   padding: 20px 40px;
   border-radius: 10px;
   box-shadow: 4px 8px 8px white, -4px -4px 4px #fae7f7;
   margin-bottom: 50px;
+  text-align: center;
+}
+.moreParagraph a {
+  text-decoration: none;
+  color: #3b293b;
+  font-weight: 800;
 }
 .divider {
   position: absolute;
@@ -161,7 +167,7 @@ body {
 
 .pageContent {
   width: 40%;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 35px;
   word-spacing: 5px;
 }
