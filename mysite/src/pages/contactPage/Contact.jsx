@@ -3,7 +3,7 @@ import axios from 'axios'
 import emailjs from '@emailjs/browser'
 import './contact.css'
 import ScrollToTop from '../../components/ScrollToTop'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function Contact() {
   const navigate = useNavigate()
@@ -63,7 +63,16 @@ export default function Contact() {
             At More-Links Deco, we believe every event deserves a touch of magic. Whether you're
             planning a wedding, corporate event, birthday party, or any special occasion, we're here
             to bring your vision to life.
-            <hr /> Feel free to reach out using any of the methods below—we're excited to hear from
+            <hr /> Feel free to reach out through{' '}
+            <Link
+              to={
+                'https://wa.me/2348140960034?text=Hello%20there!%20I%20want%20to%20discuss%20an%20upcoming%20event%20with%20you.'
+              }
+              target='_blank'
+            >
+              Whatsapp
+            </Link>{' '}
+            or call us on <a href='tel:08140960034'>0814 096 0034</a>. We are excited to hear from
             you!
           </p>
         </div>
