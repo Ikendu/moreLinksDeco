@@ -39,10 +39,13 @@
   color: #38d3fd;
 }
 .aboutMain p {
-  width: max(57%, 380px);
+  width: max(54%, 380px);
   line-height: 35px;
   font-size: 20px;
   text-shadow: 2px 0px #131212;
+}
+.aboutMain a {
+  color: #f5f3f3;
 }
 
 .aboutMain {

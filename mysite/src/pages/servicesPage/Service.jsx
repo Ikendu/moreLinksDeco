@@ -43,7 +43,17 @@ export default function Service() {
             <div className='frontDetails'>
               Creative concepts brought to life with precision and flair. Let us handle the details
               while you enjoy the celebration! <br />
-              Call us now <a href='tel:08140960034'>0814 096 0034</a>
+              Feel free to reach out through{' '}
+              <Link
+                to={
+                  'https://wa.me/2348140960034?text=Hello%20there!%20I%20want%20to%20discuss%20an%20upcoming%20event%20with%20you.'
+                }
+                target='_blank'
+              >
+                Whatsapp
+              </Link>
+              <br />
+              or call us on <a href='tel:08140960034'>0814 096 0034</a>.
             </div>
             <br />
           </div>

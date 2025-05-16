@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 import ScrollToTop from '../../components/ScrollToTop'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import pica from '../../assets/images/pica.png'
 import picb from '../../assets/images/picb.png'
 import picc from '../../assets/images/picc.png'
@@ -55,11 +55,21 @@ export default function AboutUs() {
           <h2>About Us</h2>
           <p>
             At More-Links Event Deco, we transform ordinary spaces into breathtaking experiences.
-            With over 6 years of experience in the event decoration industry, our team has mastered
+            With over 9 years of experience in the event decoration industry, our team has mastered
             the art of curating memorable events tailored to your unique vision. From elegant
             weddings and corporate galas to intimate celebrations, we pride ourselves on creating
             atmospheres that inspire and captivate. <br />
-            Call us now <a href='tel:0814 096 0034'>0814 096 0034</a>
+            Feel free to reach out through{' '}
+            <Link
+              to={
+                'https://wa.me/2348140960034?text=Hello%20there!%20I%20want%20to%20discuss%20an%20upcoming%20event%20with%20you.'
+              }
+              target='_blank'
+            >
+              Whatsapp
+            </Link>
+            <br />
+            or call us on <a href='tel:08140960034'>0814 096 0034</a>.
           </p>
         </div>
       </div>
