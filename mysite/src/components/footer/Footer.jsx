@@ -35,7 +35,7 @@ export default function Footer() {
               </div>
             </div>
             <div>
-              <h2>✨&nbsp;Services&nbsp;&&nbsp;Solutions</h2>
+              <h2>Services&nbsp;&&nbsp;Solutions</h2>
               <ul className='serviceList'>
                 <li>
                   <Link to='/services'>🎈 Event Styling</Link>
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
           <div className='centerControl'>
             <div className='quickLinks'>
-              <h2>Quick Links</h2>
+              <h2>Quick&nbsp;Links</h2>
               <ul className='footerLinks'>
                 <li>
                   <Link to='/about'>About Us</Link>
