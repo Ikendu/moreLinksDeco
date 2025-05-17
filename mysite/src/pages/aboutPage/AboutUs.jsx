@@ -117,7 +117,7 @@ export default function AboutUs() {
         </div>
         {/* <hr /> */}
         <div className='aboutApart'>
-          <h2>What Sets Us Apart</h2>
+          <h3>What Sets Us Apart</h3>
           <div className='apartDetails'>
             <div>
               <p>Expertise Across Events:</p>
