@@ -21,14 +21,18 @@ export default function ChooseUs() {
             celebrations to grand occasions, we bring your dreams to life with stunning event
             decoration, tailored to your style and theme. Reach out to our team now on{' '}
             <Link
+              className='call-us'
               to={
                 'https://wa.me/2348140960034?text=Hello%20there!%20I%20want%20to%20discuss%20an%20upcoming%20event%20with%20you.'
               }
               target='_blank'
             >
-              whatsapp
+              Whatsapp
             </Link>{' '}
-            or call us at <a href='tel:08140960034'>0814 096 0034</a>
+            or call us at{' '}
+            <a className='call-us' href='tel:08140960034'>
+              0814 096 0034
+            </a>
           </p>
         </div>
         <div className='imageDetails'>

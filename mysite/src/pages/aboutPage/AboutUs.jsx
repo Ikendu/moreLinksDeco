@@ -61,6 +61,7 @@ export default function AboutUs() {
             atmospheres that inspire and captivate. <br />
             Feel free to reach out through{' '}
             <Link
+              className='call-us'
               to={
                 'https://wa.me/2348140960034?text=Hello%20there!%20I%20want%20to%20discuss%20an%20upcoming%20event%20with%20you.'
               }
@@ -69,7 +70,11 @@ export default function AboutUs() {
               Whatsapp
             </Link>
             <br />
-            or call us on <a href='tel:08140960034'>0814 096 0034</a>.
+            or call us on{' '}
+            <a className='call-us' href='tel:08140960034'>
+              0814 096 0034
+            </a>
+            .
           </p>
         </div>
       </div>
