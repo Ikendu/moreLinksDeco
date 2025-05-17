@@ -254,6 +254,13 @@ body {
   }
 }
 @media (max-width: 800px) {
+  .pageCover {
+    height: 65vh;
+  }
+  .overlay {
+    z-index: 10;
+    height: 65vh;
+  }
   .reduceLink {
     padding: 20px;
   }
@@ -291,13 +298,6 @@ body {
   }
 }
 @media (max-width: 600px) {
-  .pageCover {
-    height: 80vh;
-  }
-  .overlay {
-    z-index: 10;
-    height: 80vh;
-  }
   .landingContent {
     padding: 10px;
     width: 80%;
@@ -324,11 +324,11 @@ body {
 }
 @media (max-width: 500px) {
   .pageCover {
-    height: 90vh;
+    /* height: 70vh; */
   }
   .overlay {
     z-index: 10;
-    height: 90vh;
+    /* height: 70vh; */
   }
   .pageContent {
     font-size: 1em;
