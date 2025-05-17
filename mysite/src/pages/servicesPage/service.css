@@ -103,6 +103,11 @@
   max-width: 350px;
   border-radius: 10px;
 }
+.genImage img:hover,
+.genImage video:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
 @media (max-width: 1000px) {
   .serviceMainPara {
     background-color: #1010107a;

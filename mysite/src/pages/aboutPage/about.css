@@ -16,8 +16,9 @@
   left: 10px;
 }
 
-.aboutContainer h2:hover {
-  text-decoration: underline;
+.aboutContainer h2 {
+  margin: 30px 0;
+  font-weight: 900;
 }
 .aboutOverlay {
   position: absolute;
@@ -102,10 +103,6 @@
   font-size: 1em !important;
   border: 2px solid;
 }
-.imageSection p:hover {
-  background: repeating-linear-gradient(#42022d00, #44022f00 70%, #f5c1ee 80% 100%);
-  color: #090909;
-}
 .teamMembers {
   display: flex;
   flex-wrap: wrap;
@@ -117,6 +114,10 @@
   border-radius: 50%;
   height: 300px;
   width: 300px;
+}
+.teamMem:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 .teamMem p {
   height: 300px;
