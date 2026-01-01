@@ -1,7 +1,7 @@
 <?php
 $dbHost = 'localhost';
 $dbUser = 'morelink_deco';
-$dbPass = '9652Aa@!@!@!';
+$dbPass = '96521Aa@!@!@!';
 $dbName = 'morelink_deco';
 
 $mysqli = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
@@ -10,3 +10,4 @@ if ($mysqli->connect_errno) {
     echo json_encode(['success' => false, 'message' => 'Database connection failed']);
     exit;
 }
+?>
